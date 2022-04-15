@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: noto-sans-sb;
+	src: url("font/Noto_Sans/NotoSans-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: noto-sans-m;
+	src: url("font/Noto_Sans/NotoSans-Medium.ttf");
+}
+
+@font-face {
+	font-family: noto-sans-r;
+	src: url("font/Noto_Sans/NotoSans-Regular.ttf");
+}
+
+@font-face {
+	font-family: noto-sans-l;
+	src: url("font/Noto_Sans/NotoSans-Light.ttf");
+}
+
+/* Label */
+
+.iTravel-label {
+	text-align: center;
+	margin: 30px auto;
+}
+
+.iTravel-word {
+	font-size: 50px;
+	font-family: noto-sans-r;
+	letter-spacing: 1px;
+	color: #25AAE1;
+	margin: 5px;
+}
+
+/* Destination Item */
+
+.destination-item-thumbnail {
+	margin-bottom: 30px;
+	display: block;
+	overflow: hidden;
+	border: 4px solid #BFBFBF;
+	border-radius: 10px;
+	box-sizing: border-box;
+	transition: 0.75s;
+}
+
+.destination-item-thumbnail a {
+	position: relative;
+}
+
+.destination-item-thumbnail a img {
+	transition: 0.75s;
+	display: block;
+	width: 100%;
+}
+
+.destination-item-thumbnail:hover {
+	border-color: #FBB040;
+	transition: 0.75s;
+}
+
+.destination-item-thumbnail:hover a img {
+	transform: scale(110%);
+	transition: 0.75s;
+}
+
+.destination-label {
+	position: absolute;
+	top: 125px;
+	left: 15px;
+	text-decoration: none;
+	color: white;
+	width: 160px;
+}
+
+.destination-label h2 {
+	font-size: 12px;
+	margin: 3px 0;
+	font-family: noto-sans-l;
+	letter-spacing: 1px;
+}
+
+.destination-label h3 {
+	font-size: 15px;
+	margin: 3px 0;
+	font-family: noto-sans-sb;
+	letter-spacing: 1px;
+}
+
+/* Test */
+
+.blog-information {
+	display: flex;
+	flex-direction: row;
+}
+
+.blog-information div {
+	display: flex;
+	flex-direction: row;
+	margin-right: 25px;
+}
+
+.blog-information div p {
+	margin: 0;
+	font-family: noto-sans-r;
+	font-size: 13px;
+	color: #878787;
+}
+
+.blog-information div i {
+	margin-right: 7px;
+	color: #878787;
+}
+
+.img-blog-block {
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.big-featured-blog .img-blog-block img {
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+	transition: 0.75s;
+}
+
+.big-featured-blog img:hover {
+	transition: 0.75s;
+	transform: scale(110%);
+}
+
+.big-featured-blog .blog-category {
+	font-family: noto-sans-m;
+	font-size: 13px;
+	margin: 15px 0 10px 0;
+	letter-spacing: 1px;
+	color: #FBB040;
+	text-decoration: none;
+	display: block;
+}
+
+.big-featured-blog .big-blog-title {
+	font-family: noto-sans-sb;
+	font-size: 21px;
+	text-decoration: none;
+	color: #25AAE1;
+	margin: 10px 0;
+	display: block;
+}
+
+.big-featured-blog p {
+	font-family: noto-sans-m;
+	font-size: 16px;
+	color: #464646;
+}
+
+.small-blog {
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.small-blog a img {
+	display: block;
+	width: 100%;
+}
+
+.small-blog {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.small-blog-content {
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+	width: 280px;
+}
+
+.small-blog-content .blog-category {
+	padding: 5px 7px;
+	box-sizing: border-box;
+	background-color: #FBB040;
+	color: #fff;
+	text-align: center;
+	margin: 10px 0;
+	display: inline-block;
+	font-family: noto-sans-r;
+	font-size: 10px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.small-blog-content .big-blog-title {
+	display: block;
+	font-size: 13px;
+	color: #fff;
+	font-family: noto-sans-sb;
+	text-decoration: none;
+}
+
+.small-blog-content .blog-information {
+	margin-top: 15px;
+	color: #fff;
+}
+
+.small-blog-content .blog-information div p, .small-blog-content .blog-information div i {
+	color: #fff;
+	
+}
+
+.small-blog-content .blog-information div p {
+	font-size: 11px;
+}
