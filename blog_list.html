@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>blog_list</title>
+	<link rel="stylesheet" href="CSS/itravel-grid.css">
+	<link rel="stylesheet" href="CSS/bootstrap-grid.css">
+	<link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+	<link rel="stylesheet" href="CSS/font-awesome.min.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+</head>
+
+<body>
+	
+	<div class="container">
+		<div class="col-8" id="create-this">
+			
+		</div>
+	</div>
+	
+	<script src="JS/destination-city.js"></script>
+<!--	<script src="JS/itravel-script.js"></script>-->
+	<script src="JS/swiper-bundle.min.js"></script>
+	<script>
+		const blog_innerHTML = document.getElementById('create-this');
+		var blog_show = 10;
+		showBlog();
+		
+		function showBlog() {
+			for (var i=0; i<blog_show; i++) {
+				blog_innerHTML.append(createBlogItems(blog_list[i].blog_image_link, blog_list[i].blog_title, blog_list[i].summary, blog_list[i].date, createBlogTags(blog_list[i].blog_tags), blog_list[i].author));
+			}
+		}
+		
+		function createBlogTags(blog_tags) {
+			var blog_tags_inner = '';
+			for (var i=0; i<blog_tags.length; i++) {
+				blog_tags_inner = blog_tags_inner + '<a href="#" class="blog-category">' + blog_tags[i] + '</a>';
+			}
+			return blog_tags_inner;
+		}
+		
+		function createBlogItems(blog_image_link, blog_title, blog_summary, blog_date, blog_tags, blog_author) {
+			var blog_item = document.createElement('div');
+			blog_item.classList.add('blog-list', 'row');
+			
+			var blog_image = document.createElement('div');
+			blog_image.classList.add('col-4');
+			blog_image.innerHTML = '<div href="#" class="blog-image-thumbnail"><a href="#"><img style="width: 100%" src="' + blog_image_link +'list.png" alt=""></a></div>';
+			
+			var blog_content = document.createElement('div');
+			blog_content.classList.add('col-8');
+			blog_day = blog_date.getDate() < 10 ? '0' + blog_date.getDate() : blog_date.getDate();
+			blog_month = blog_date.getMonth() < 10 ? '0' + blog_date.getMonth() : blog_date.getMonth();
+			blog_content.innerHTML = '<div class="blog-content"><div class="blog-tabs">' + blog_tags + '</div><a href="#" class="blog-list-title">' + blog_title + '</a><div class="blog-information"><div><i class="fa fa-calendar"></i><p>' + blog_day +'/' + blog_month + '/' + blog_date.getFullYear() +'</p></div><div><i class="fa fa-user"></i><p>' + blog_author +'</p></div></div><p>' + blog_summary + '</p></div>';
+			
+			blog_item.append(blog_image, blog_content);
+			
+			return blog_item;
+		}
+	</script>
+</body>
+</html>
