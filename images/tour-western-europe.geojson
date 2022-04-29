@@ -1,0 +1,282 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            2.35183,
+          	48.85658
+          ],
+          [
+            3.226772,
+          	51.208553
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": 0
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            3.226772,
+          	51.208553
+          ],
+          [
+            4.351697,
+          	50.846557
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": 1
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            4.351697,
+          	50.846557
+          ],
+          [
+            7.10066,
+          	50.735851
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": 2
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            7.10066,
+          	50.735851
+          ],
+          [
+            6.959974,
+          	50.938361
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": 3
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            6.959974,
+          	50.938361
+          ],
+          [
+            6.077431,
+          	52.741105
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": 4
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          4.818145,
+          52.473782
+        ],
+        "type": "Point"
+      },
+      "id": 5
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            6.081941,
+            52.739604
+          ],
+          [
+            4.893518,
+            52.37221
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": 6
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            3.222079,
+            51.206754
+          ],
+          [
+            4.361163,
+            50.84031
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": 7
+    },
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            4.900232,
+            52.37221
+          ],
+          [
+            4.322806,
+            52.088456
+          ]
+        ],
+        "type": "LineString"
+      },
+      "id": 8
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q1025664",
+        "place_name": "Giethoorn, Overijssel, Netherlands"
+      },
+      "geometry": {
+        "coordinates": [
+          6.077431,
+          52.741105
+        ],
+        "type": "Point"
+      },
+      "id": 9
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q31917795",
+        "place_name": "Bonn, North Rhine-Westphalia, Germany"
+      },
+      "geometry": {
+        "coordinates": [
+          7.10066,
+          50.735851
+        ],
+        "type": "Point"
+      },
+      "id": 10
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q365",
+        "place_name": "Köln, North Rhine-Westphalia, Germany"
+      },
+      "geometry": {
+        "coordinates": [
+          6.959974,
+          50.938361
+        ],
+        "type": "Point"
+      },
+      "id": 11
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "short_code": "FR-75",
+        "wikidata": "Q90",
+        "place_name": "Paris, France"
+      },
+      "geometry": {
+        "coordinates": [
+          2.35183,
+          48.85658
+        ],
+        "type": "Point"
+      },
+      "id": 12
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q12994",
+        "place_name": "Brugge, West Flanders, Belgium"
+      },
+      "geometry": {
+        "coordinates": [
+          3.226772,
+          51.208553
+        ],
+        "type": "Point"
+      },
+      "id": 13
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q239",
+        "place_name": "Brussels, Brussels-Capital, Belgium"
+      },
+      "geometry": {
+        "coordinates": [
+          4.351697,
+          50.846557
+        ],
+        "type": "Point"
+      },
+      "id": 14
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q36600",
+        "place_name": "Den Haag, South Holland, Netherlands"
+      },
+      "geometry": {
+        "coordinates": [
+          4.311346,
+          52.079984
+        ],
+        "type": "Point"
+      },
+      "id": 15
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wikidata": "Q727",
+        "place_name": "Amsterdam, North Holland, Netherlands"
+      },
+      "geometry": {
+        "coordinates": [
+          4.893604,
+          52.37276
+        ],
+        "type": "Point"
+      },
+      "id": 16
+    }
+  ],
+  "type": "FeatureCollection"
+}

@@ -1,0 +1,977 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="CSS/itravel-grid.css">
+	<link rel="stylesheet" href="CSS/bootstrap-grid.css">
+	<link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+	<link rel="stylesheet" href="CSS/font-awesome.min.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<link href="CSS/mapbox-gl.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="container-fluid itravel-header">
+		<div class="container">
+			<div class="row itravel-header-content">
+				<div class="col-3">
+					<img src="images/itravel_logo.png" alt="">
+				</div>
+				<div class="col-9">
+					<ul class="itravel-menu">
+						<li><a href="#">Điểm đến</a></li>
+						<li><a href="#">Tour</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Trò chơi</a></li>
+						<li><a href="#">Liên hệ</a></li>
+						<li><button class="menu-button"><i class="fa fa-search"></i></button></li>
+						<li><button class="menu-button"><i class="fa fa-user"></i></button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid blue-itravel-subpage">
+		<div class="container subpage-url">
+			<a href="#">Home</a>
+			<i class="fa fa-chevron-right"></i>
+			<a href="#">Tour</a>
+			<i class="fa fa-chevron-right"></i>
+			<a href="#">Châu Âu</a>
+			<i class="fa fa-chevron-right"></i>
+			<a href="#">Tour Tây Âu (Làng cổ Giethoorn)</a>
+		</div>
+	</div>
+	<div class="container-fluid tour-item-header-background">
+		<div class="container">
+			<div class="row tour-header">
+				<div class="col-8 tour-header-info">
+					<h5>Pháp - Đức - Bỉ - Hà Lan</h5>
+					<h1>Tour Tây Âu (Ngôi làng cổ tích Giethoorn)</h1>
+					<div class="total-review-point">
+						<ul>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star-half-o"></i></li>
+						</ul>
+						<div class="point-num">4.4</div>
+						<span>12 review</span>
+					</div>
+				</div>
+				<div class="col-4 tour-header-price">
+					<h4>47.990.000đ</h4>
+					<h5>52.000.000đ</h5>
+					<a href="#">Xem ngày</a>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="container-fluid destination-tab">
+		<div class="container">
+			<ul class="dest-tab-list">
+				<li><a href="#" class="active">ĐIỂM NHẤN</a></li>
+				<li><a href="#">LỊCH TRÌNH</a></li>
+				<li><a href="#">CHI TIẾT</a></li>
+				<li><a href="#">ĐÁNH GIÁ</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container mt-5 mb-5">
+		<div class="iTravel-label mb-5">
+			<h1 class="iTravel-word">ĐIỂM NHẤN</h1><img src="images/explore-label-line.png" alt="">
+		</div>
+		<div class="presentation row">
+			<div class="col-3">
+				<div class="presentation-item row">
+					<div class="col-5 presentation-icon">
+						<img src="images/tour-presentation-1.png" alt="" style="width: 50%;text-align: right">
+					</div>
+					<div class="col-7 presentation-detail">
+						<h6>Thời gian</h6>
+						<p>9 ngày 8 đêm</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="presentation-item row">
+					<div class="col-5 presentation-icon">
+						<img src="images/tour-presentation-2.png" alt="" style="width: 50%;text-align: right">
+					</div>
+					<div class="col-7 presentation-detail">
+						<h6>Phương tiện</h6>
+						<p>Máy bay, xe khách</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="presentation-item row">
+					<div class="col-5 presentation-icon">
+						<img src="images/tour-presentation-3.png" alt="" style="width: 50%;text-align: right">
+					</div>
+					<div class="col-7 presentation-detail">
+						<h6>Xuất phát</h6>
+						<p>TP.HCM</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="presentation-item row">
+					<div class="col-5 presentation-icon">
+						<img src="images/tour-presentation-4.png" alt="" style="width: 50%;text-align: right">
+					</div>
+					<div class="col-7 presentation-detail">
+						<h6>Điểm tham quan</h6>
+						<p>25 điểm quan</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="presentation-item row">
+					<div class="col-5 presentation-icon">
+						<img src="images/tour-presentation-5.png" alt="" style="width: 50%;text-align: right">
+					</div>
+					<div class="col-7 presentation-detail">
+						<h6>Ẩm thực</h6>
+						<p>Buffet sáng</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="presentation-item row">
+					<div class="col-5 presentation-icon">
+						<img src="images/tour-presentation-6.png" alt="" style="width: 50%;text-align: right">
+					</div>
+					<div class="col-7 presentation-detail">
+						<h6>Khách sạn</h6>
+						<p>Khách sạn 4 sao</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="presentation-item row">
+					<div class="col-5 presentation-icon">
+						<img src="images/tour-presentation-7.png" alt="" style="width: 50%;text-align: right">
+					</div>
+					<div class="col-7 presentation-detail">
+						<h6>Số người</h6>
+						<p>30 người</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="presentation-item row">
+					<div class="col-5 presentation-icon">
+						<img src="images/tour-presentation-8.png" alt="" style="width: 50%;text-align: right">
+					</div>
+					<div class="col-7 presentation-detail">
+						<h6>Mã Tour</h6>
+						<p>TAYAU_0001</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container tour-map mt-3 mb-5">
+		<div class="iTravel-label mb-5">
+			<h1 class="iTravel-word" style="font-size: 30px">ĐIỂM ĐẾN TRONG TOUR</h1>
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<div class="tour-destination">
+					<a href="#" class="tour-destination-img"><img src="images/destination-image-thumbnail/Countries/europe/western-europe/france/ile-de-france/paris/featured-thumbnail.png" alt=""></a>
+					<div class="tour-destination-info">
+						<a href="#" class="tour-destination-region" id="tour-destination-region-preview">L'ile de France</a>
+						<a href="#" class="tour-destination-places" id="tour-destination-place-preview">Paris</a>
+						<p class="tour-destination-place-description" id="tour-destination-description-preview">Là thủ đô của Pháp, Paris đã tồn tại như một thành phố quan trọng trong hơn 2.000 năm. Thường được gọi bằng những biệt danh như “thành phố tình yêu” và “thành phố ánh sáng”, Paris ngày nay là một trong những trung tâm hàng đầu thế giới về kinh doanh, thời trang, giải trí, nghệ thuật và văn hóa. Chỉ cần nhắc đến Paris thôi là bạn đã gợi lên hình ảnh về các địa danh nổi tiếng thế giới, bảo tàng và nhà thờ lớn của thành phố.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-8">
+				<div style="position: relative">
+					<div id="tour-map-block"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container mb-5 mt-4">
+		<div class="tour-break-line"></div>
+	</div>
+	
+	<div class="container mt-5 mb-5 tour-iteration">
+		<div class="iTravel-label mb-5">
+			<h1 class="iTravel-word">LỊCH TRÌNH</h1><img src="images/explore-label-line.png" alt="">
+		</div>
+		<div class="row">
+			<div class="tour-iteration-content col-6">
+			<div class="tour-iteration-schedule">
+				<div class="tour-iteration-day">
+					<h4>Ngày 1 - TP. HỒ CHÍ MINH - PARIS</h4>
+					<p>Trưởng đoàn iTravel đón Quý khách tại điểm hẹn sân bay Tân Sơn Nhất. Đoàn làm thủ tục lên chuyến bay tới Paris – Thủ đô nước Pháp (chuyến bay quá cảnh tùy theo hàng không).</p>
+				</div>
+				<div class="tour-iteration-day">
+					<h4>Ngày 2 - PARIS (Ăn trưa và ăn tối)</h4>
+					<p>Tới Paris - Thành phố tráng lệ còn được biết đến với tên gọi “Kinh đô ánh sáng”. Xe đón đoàn tham quan thành phố: Quý khách chụp hình Nhà thờ Đức Bà Paris - được xây dựng vào thế kỷ thứ 13, một trong những công trình đầu tiên và tiêu biểu nhất cho kiến trúc Gothic với những nét chạm trổ tinh tế, sắc sảo, đường nét vút cao như dao trổ lên bầu trời. Lên Tháp Eiffel – biểu tượng của nước Pháp và ngắm cảnh Paris từ trên cao. Với toàn cảnh Paris trong tầm mắt, Quý khách sẽ không khỏi trầm trồ trước nghệ thuật quy hoạch đô thị tuyệt vời của thành phố hoa lệ. Quý khách lên du thuyền dạo Sông Seine thơ mộng. Ăn tối và nhận phòng khách sạn nghỉ ngơi.</p>
+				</div>
+				<div class="tour-iteration-day">
+					<h4>Ngày 3 - PARIS (Ăn ba bữa)</h4>
+					<p>Ăn sáng tại khách sạn. Quý khách tham quan Bảo tàng Louvre – nơi lưu trữ nhiều bộ sưu tập tác phẩm nghệ thuật như tranh, tượng điêu khắc, trang sức…quý giá của Thế giới. Tiếp tục tham quan Bảo tàng nước hoa Fragonard – được xây dựng trên nền của một nhà hát cổ, sau đó được nâng cấp trong suốt 2 năm để trở thành nơi trình diễn lịch sử độc đáo cũng như quy trình, kỹ thuật chế tạo các loại nước hoa. Sau bữa trưa, đoàn tiếp tục tham quan chụp hình quảng trường Concorde, Khải Hoàn Môn - minh chứng hùng hồn của sức mạnh đội quân Napoleon đệ Nhất, tự do rảo bước tham quan Đại lộ đẹp nhất Thế giới Champs Elysee với những showroom, cửa hiệu nổi tiếng, đoàn mua sắm tại một trong những điểm shopping được ưa thích tại Lafayette. Ăn tối và về khách sạn nghỉ ngơi.</p>
+				</div>
+				<div class="tour-iteration-day">
+					<h4>Ngày 4 - PARIS – BRUGES (Ăn ba bữa)</h4>
+					<p>Ăn sáng và trả phòng khách sạn. Quý khách khởi hành tới Lâu đài Versailles cổ kính, một trong những minh chứng về thời hoàng kim của nền quân chủ Pháp, với khu vườn hoàng gia tuyệt đẹp. Sau bữa trưa, đoàn khởi hành đến Bruges - một trong những thành phố thơ mộng bậc nhất của Bỉ. Ăn tối tại nhà hàng địa phương và nhận phòng khách sạn.</p>
+				</div>
+				<div class="tour-iteration-day">
+					<h4>Ngày 5 - BRUGES - BRUSSELS (Ăn ba bữa)</h4>
+					<p>Ăn sáng và trả phòng khách sạn. Đoàn tiến hành tham quan Bruges với cây cầu và hồ Tình Yêu lãng mạn, quảng Trường lớn Mark. Tiếp tục tham quan bảo tàng Chocolate – đất nước nổi tiếng bậc nhất thế giới về Chocolate. Sau bữa trưa, đoàn tiếp tục hành trình đến Thủ đô Brussels: dừng chân chụp hình bên ngoài mô hình Atomium với cấu trúc nguyên tử khổng lồ, đường kính một khối cầu là 18m. Chụp hình bên ngoài Cung Điện Hoàng Gia, Quảng Trường La Grande - diện tích 20.000m2 xây vào thế kỷ XI với nền lát đá hoa cương. Quảng trường này đã được UNESCO ghi vào danh sách di sản văn hóa của nhân loại và từng được Đại văn hào Victor Hugo ca tụng là "quảng trường đẹp nhất thế giới" vì được bảo tồn tốt nhất châu Âu, tham quan Manneken Pis - tượng chú bé đang “tè” - biểu tượng của Vương Quốc Bỉ....Ăn tối tại nhà hàng địa phương và nhận phòng khách sạn.</p>
+				</div>
+				<div class="tour-iteration-day">
+					<h4>Ngày 6 - BRUSSELS - BONN – COLOGNE (Ăn ba bữa)</h4>
+					<p>Ăn sáng và trả phòng khách sạn. Xe đưa đoàn đến thành phố Bonn của nước Đức, tham quan ngôi nhà của nhạc sĩ tài ba Beethoven, chụp hình bên ngoài Đại học Bonn. Sau bữa trưa, đoàn khởi hành đến Cologne - là trung tâm văn hóa lớn của vùng đất dọc sông Rhine và có một khung cảnh nghệ thuật sôi động. Tất cả những vật dụng xuất hiện trên đường phố hoặc nơi công cộng đều được chăm chút và trang trí với tiêu chí nghệ thuật mang nét độc đáo riêng, tại đây đoàn tham quan nhà thờ Dom cổ kính - được xem như linh hồn của thành phố cổ kính Cologne. Ăn tối và nhận phòng khách sạn nghỉ ngơi.</p>
+				</div>
+				<div class="tour-iteration-day">
+					<h4>Ngày 7 - COLOGNE – GIETHOORN - AMSTERDAM (Ăn ba bữa)</h4>
+					<p>Ăn sáng và trả phòng khách sạn. Quý khách khởi hành đến ngôi làng cổ tích Giethoorn – mệnh danh là Venice của Hà Lan. Ngôi làng vẫn giữ những mái nhà tranh xinh xắn, đặc biệt nơi đây không có đường dành cho xe cơ giới, phương tiện di chuyển chính là thuyền trên kênh đào hoặc tản bộ qua những nhịp cầu nhỏ yên bình. Đoàn khởi hành về Thủ đô Amsterdam. Tự do mua sắm. Ăn tối và nhận phòng khách sạn nghỉ ngơi.</p>
+				</div>
+				<div class="tour-iteration-day">
+					<h4>Ngày 8 - AMSTERDAM - ZAANSE SCHANS - AMSTERDAM (Ăn ba bữa)</h4>
+					<p>Ăn sáng tại khách sạn. Quý khách khởi hành tham quan khu đồng quê Zaanse Schans với những ngôi nhà xinh xắn được xây dựng từ thế kỷ 17, 18, được dời đến từ các vùng lân cận, đặc biệt là từ vùng Zaandam và tái tạo để trở thành một viện bảo tàng sinh thái rất sinh động với những cối xay gió còn hoạt động. Đến khu đồng quê Zaanse Schans, du khách còn thăm xưởng làm guốc gỗ thành lập từ năm 1860, chuyên làm những đôi guốc truyền thống bằng phương pháp thủ công trên gỗ cây vuông và xưởng sản xuất phomai. Sau bữa trưa, đoàn tham quan Trung Tâm Thương Mại Kim Cương Amsterdam, chụp hình tại Hoàng Cung, tự do khám phá quảng trường Dam nổi tiếng. Ăn tối và trở về khách sạn nghỉ ngơi.</p>
+				</div>
+				<div class="tour-iteration-day">
+					<h4>Ngày 9 - AMSTERDAM - THE HAGUE - TP. HỒ CHÍ MINH (Ăn sáng và ăn trưa)</h4>
+					<p>Ăn sáng và trả phòng khách sạn. Đoàn khởi hành tham quan thành phố The Hague: chụp hình bên ngoài Toà án quốc tế La Hay, toà nhà quốc hội Binnehof. Sau bữa trưa, xe đưa đoàn ra phi trường đón chuyến bay về Việt nam (Chuyến bay quá cảnh tùy theo hàng không).</p>
+				</div>
+				<div class="tour-iteration-day" style="border: none">
+					<h4>Ngày 10 - TP. HỒ CHÍ MINH</h4>
+					<p> Tại sân bay Tân Sơn Nhất, Trưởng đoàn Vietravel chào tạm biệt Quý khách. Kết thúc chuyến tham quan.</p>
+				</div>
+			</div>
+			</div>
+			<div class="col-6">
+				<div class="row">
+					<div class="col-6 mb-4">
+								<a href="images/tour-thumbnail/tour-1/reno-laithienne-_xAUCK4KtHo-unsplash.jpg" class="tour-gallery-button">
+									<img src="images/tour-thumbnail/tour-1/tour-1-notre-dame.png" alt="">
+								</a>
+							</div>
+					<div class="col-6 mb-4">
+								<a href="images/tour-thumbnail/tour-1/alex-ovs-UDyF0_Frxqs-unsplash.jpg" class="tour-gallery-button">
+									<img src="images/tour-thumbnail/tour-1/tour-1-eiffel-tower.png" alt="">
+								</a>
+							</div>
+					<div class="col-6 mb-4">
+								<a href="images/tour-thumbnail/tour-1/j-shim-8N6HO3YIqwA-unsplash.jpg" class="tour-gallery-button">
+									<img src="images/tour-thumbnail/tour-1/tour-1-seine.png" alt="">
+								</a>
+							</div>
+					<div class="col-6 mb-4">
+							<a href="images/tour-thumbnail/tour-1/guillaume-meurice-zoK6WhRlTQo-unsplash.jpg" class="tour-gallery-button">
+								<img src="images/tour-thumbnail/tour-1/tour-1-louvre.png" alt="">
+							</a>
+						</div>
+					<div class="col-6 mb-4">
+						<a href="images/tour-thumbnail/tour-1/fontaine-des-mers-gfcbdbd14c_1920.jpg" class="tour-gallery-button">
+							<img src="images/tour-thumbnail/tour-1/tour-1-concorde-square.png" alt="">
+						</a>
+					</div>
+					<div class="col-6 mb-4">
+						<a href="images/tour-thumbnail/tour-1/arc-de-triomphe-g68c745a65_1920.jpg" class="tour-gallery-button">
+							<img src="images/tour-thumbnail/tour-1/tour-1-arc-de-triomphe.png" alt="">
+						</a>
+					</div>
+					<div class="col-6 mb-4">
+							<a href="images/tour-thumbnail/tour-1/versailles-gbde1a8d78_1920.jpg" class="tour-gallery-button">
+								<img src="images/tour-thumbnail/tour-1/tour-1-versailles.png" alt="">
+							</a>
+						</div>
+					<div class="col-6 mb-4">
+							<a href="images/tour-thumbnail/tour-1/belfry-2611573_1920.jpg" class="tour-gallery-button">
+								<img src="images/tour-thumbnail/tour-1/tour-1-brugge.png" alt="">
+							</a>
+						</div>
+					<div class="col-6 mb-4">
+							<a href="images/tour-thumbnail/tour-1/royal-palace-of-brussels-6404716_1920.jpg" class="tour-gallery-button">
+								<img src="images/tour-thumbnail/tour-1/tour-1-brussels-royal-palace.png" alt="">
+							</a>
+						</div>
+					<div class="col-6 mb-4">
+							<a href="images/tour-thumbnail/tour-1/belgium-g3cef717f1_1920.jpg" class="tour-gallery-button">
+								<img src="images/tour-thumbnail/tour-1/tour-1-atomium.png" alt="">
+							</a>
+						</div>
+					<div class="col-6 mb-4">
+							<a href="images/tour-thumbnail/tour-1/grand-place-3614619_1920.jpg" class="tour-gallery-button">
+								<img src="images/tour-thumbnail/tour-1/tour-1-grand-place.png" alt="">
+							</a>
+						</div>
+					<div class="col-6 mb-4">
+							<a href="images/tour-thumbnail/tour-1/college-leaners-university-of-bonn.jpg" class="tour-gallery-button">
+								<img src="images/tour-thumbnail/tour-1/tour-1-university-of-bonn.png" alt="">
+							</a>
+					</div>
+					<div class="col-6 mb-4">
+							<a href="images/tour-thumbnail/tour-1/koln-dom.jpg" class="tour-gallery-button">
+								<img src="images/tour-thumbnail/tour-1/tour-1-koln-dom.png" alt="">
+							</a>
+					</div>
+					<div class="col-6 mb-4">
+							<a href="images/tour-thumbnail/tour-1/yossi-moalem-vlUr8Vjt994-unsplash.jpg" class="tour-gallery-button">
+								<img src="images/tour-thumbnail/tour-1/tour-1-giethoorn.png" alt="">
+							</a>
+					</div>
+					<div class="col-6 mb-4">
+							<a href="images/tour-thumbnail/tour-1/moritz-kindler-I5zb8Tw-Avc-unsplash.jpg" class="tour-gallery-button">
+								<img src="images/tour-thumbnail/tour-1/tour-1-zaanse-schans.png" alt="">
+							</a>
+					</div>
+					<div class="col-6 mb-4">
+							<a href="images/tour-thumbnail/tour-1/frans-ruiter-TdrhCAXP1rU-unsplash.jpg" class="tour-gallery-button">
+								<img src="images/tour-thumbnail/tour-1/tour-1-amsterdam-royal-palace.png" alt="">
+							</a>
+					</div>
+					<div class="col-6 mb-4">
+							<a href="images/tour-thumbnail/tour-1/frans-ruiter-TdrhCAXP1rU-unsplash.jpg" class="tour-gallery-button">
+								<img src="images/tour-thumbnail/tour-1/tour-1-amsterdam-royal-palace.png" alt="">
+							</a>
+					</div>
+					<div class="col-6 mb-4">
+							<a href="images/tour-thumbnail/tour-1/International_Court_of_Justice.jpg" class="tour-gallery-button">
+								<img src="images/tour-thumbnail/tour-1/tour-1-la-hay-court.png" alt="">
+							</a>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+	
+	<div class="container mb-5 mt-4">
+		<div class="tour-break-line"></div>
+	</div>
+	
+	<div class="container mt-5 mb-5 tour-iteration">
+		<div class="iTravel-label mb-5">
+			<h1 class="iTravel-word">CHI TIẾT</h1><img src="images/khampha-label-line.png" alt="">
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<div class="tour-price-condition">
+					<h3>Giá tour & phụ thu</h3>
+					<div class="tour-break-line"></div>
+					<div class="tour-price-category">
+						<div class="row">
+							<div class="col-8">
+								<ul class="tour-price-type">
+									<li>Loại khách</li>
+									<li>Người lớn (từ 15 tuổi trở lên)</li>
+									<li>Trẻ em (từ 5 đến 14 tuổi)</li>
+									<li>Em bé (từ 4 tuổi trở xuống)</li>
+									<li>Phụ thụ phòng dọn</li>
+								</ul>
+							</div>
+							<div class="col-4">
+								<ul class="tour-price-num">
+									<li>Giá tour</li>
+									<li>85,990,000 đ</li>
+									<li>64,492,500 đ</li>
+									<li>25,797,000 đ</li>
+									<li>12,000,000 đ</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-8">
+				<div class="tour-booking">
+					<h3>Giá tour & phụ thu</h3>
+					<div class="tour-break-line"></div>
+					<div class="tour-booking-block" id="book-block">
+						<table class="tour-booking-list">
+						  <tr>
+								<th>STT</th>
+								<th>Ngày khởi hành</th>
+								<th>Thông tin bay</th>
+								<th>Giá từ</th>
+								<th>Sổ chỗ</th>
+								<th>Đặt tour</th>
+						  </tr>
+						  <tr>
+								<td>1</td>
+								<td>24/05/2022</td>
+								<td>Qatar Airway</td>
+								<td>47.990.990đ</td>
+								<td>Còn <span>8</span> chỗ</td>
+								<td><button>Đặt tour</button></td>
+						  </tr>
+						  <tr>
+								<td>2</td>
+								<td>07/06/2022</td>
+								<td>Qatar Airway</td>
+								<td>47.990.990đ</td>
+								<td>Còn <span>10</span> chỗ</td>
+								<td><button>Đặt tour</button></td>
+						  </tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+	
+	<div class="container mb-5 mt-5">
+		<div class="tour-break-line"></div>
+	</div>
+	
+	<div class="container-fluid">
+		<div class="container">
+			<div class="iTravel-label mb-3">
+				<h1 class="iTravel-word" style="font-size: 30px">LƯU Ý</h1>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					<div class="experience-block">
+						<div class="experience-item">
+							<input type="radio" id="experience-block-1" name="accordion-toggle" checked="true">
+							<label for="experience-block-1">Giá tour bao gồm</label>
+							<div id="experience-content-1" class="accordion-text-content">
+								<ul>
+									<li>Lệ phí xin visa nhập cảnh Châu Âu (01 lần nộp)</li>
+									<li>Vé máy bay khứ hồi theo hành trình đoàn TPHCM – Paris // Amsterdam - TPHCM</li>
+									<li>Hàng không Qatar (QR): quá cảnh Doha</li>
+									<li>Thuế và các khoản phụ thu của hàng không</li>
+									<li>Khách sạn 4* tiêu chuẩn quốc tế (2 người lớn/ phòng, được kèm tối đa 1 trẻ em dưới 12 tuổi)</li>
+									<li>Các bữa ăn được liệt kê theo chương trình</li>
+									<li>Vé tham quan theo chương trình</li>
+									<li>Chi phí 1 lần test covid ở châu Âu trước khi bay về Việt Nam</li>
+									<li>Trưởng đoàn của iTravel đi theo suốt tuyến</li>
+									<li>Xe máy lạnh sử dụng theo chương trình</li>
+									<li>Bảo hiểm du lịch toàn cầu</li>
+									<li>Nước uống 1 chai 0.5l/khách/ngày</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="experience-block">
+						<div class="experience-item">
+						<input type="radio" id="experience-block-2" name="accordion-toggle">
+						<label for="experience-block-2">Giá vé trẻ em</label>
+						<div id="experience-content-2" class="accordion-text-content">
+							<ul>
+									<li>Trẻ em dưới 5 tuổi: không thu phí dịch vụ, bố mẹ tự lo cho bé và thanh toán các chi phí phát sinh (đối với các dịch vụ tính phí theo chiều cao…). Hai người lớn chỉ được kèm 1 trẻ em dưới 5 tuổi, trẻ em thứ 2 sẽ đóng phí theo qui định dành cho độ tuổi từ 5 đến dưới 12 tuổi và phụ thu phòng đơn. Vé máy bay, tàu hỏa, phương tiện vận chuyển công cộng mua vé theo qui định của các đơn vị vận chuyển.</li>
+									<li>Trẻ em từ 5 - dưới 12 tuổi: 75% giá tour người lớn (không có chế độ giường riêng). Hai người lớn chỉ được kèm 1 trẻ em từ 5 - dưới 12 tuổi, em thứ hai trở lên phải mua 1 suất giường đơn.</li>
+									<li>Trẻ em từ 12 tuổi trở lên: mua một vé như người lớn</li>
+								</ul>
+						</div>
+					</div>
+					</div>
+					<div class="experience-block">
+						<div class="experience-item">
+						<input type="radio" id="experience-block-5" name="accordion-toggle">
+						<label for="experience-block-5">Giá tour không bao gồm</label>
+						<div id="experience-content-5" class="accordion-text-content">
+							<ul>
+									<li>Chi phí cá nhân: giặt ủi, chi phí hủy đổi hành trình và nâng hạng chuyến bay, hành lý quá cước, phụ thu phòng đơn,…</li>
+									<li>Chi phí tham quan ngoài chương trình: xe điện hoặc thuyền tham quan KDL Hầm Hô,..</li>
+								</ul>
+						</div>
+					</div>
+					</div>
+					<div class="experience-block">
+						<div class="experience-item">
+						<input type="radio" id="experience-block-7" name="accordion-toggle">
+						<label for="experience-block-7">Các điều kiện khi đăng ký tour</label>
+						<div id="experience-content-7" class="accordion-text-content">
+							<h4>Điều kiện thanh toán</h4>
+							<p>Khi đăng ký đặt cọc 50% số tiền tour</p>
+							<p>Số tiền còn lại thanh toán hết trước ngày khởi hành 7-10 ngày (áp dụng tour ngày thường), trước ngày khởi hành 20-25 ngày (áp dụng tour lễ tết)</p>
+							<h4>Các điều kiện khi đăng ký</h4>
+							<p>Khi đăng ký vui lòng cung cấp giấy tờ tùy thân tất cả người đi: Chứng minh nhân dân/Hộ chiếu (Passport)/Giấy khai sinh (trẻ em dưới 14 tuổi). Quý khách khi đăng ký cung cấp tên theo giấy tờ tùy thân nào, khi đi tour mang theo giấy tờ tùy thân đó.</p>
+							<p>Quy định giấy tờ tùy thân khi đi tour :</p>
+							<ul>
+									<li>Khách quốc tịch Việt Nam: Trẻ em dưới 14 tuổi Giấy khai sinh bản chính/Hộ chiếu bản chính còn giá trị sử dụng. Trẻ em từ 14 tuổi trở lên và Người lớn CMND/ Hộ chiếu bản chính còn giá trị sử dụng. Lưu ý trẻ em trên 14 tuổi bắt buộc phải có CMND/Hộ chiếu làm thủ tục lên máy bay hoặc Giấy xác nhận nhân thân theo mẫu quy định và chỉ có giá trị trong vòng 30 ngày kể từ ngày xác nhận.</li>
+									<li>Khách quốc tịch nước ngoài hoặc là Việt kiều: Khi đi tour vui lòng mang theo hộ chiếu bản chính (Passport) hoặc thẻ xanh kèm thị thực nhập cảnh (visa dán vào hộ chiếu hoặc tờ rời hoặc cuốn miễn thị thực, các loại giấy tờ này phải có dấu nhập cảnh Việt Nam và còn giá trị sử dụng theo quy định khi đi tour).</li>
+								</ul>
+							<p>Thông tin tập trung: Tại sân bay Tân Sơn Nhất, Ga đi trong nước, trước giờ bay 2 tiếng (áp dụng ngày thường), trước 2 tiếng 30 phút (áp dụng lễ tết).</p>
+							<p>Thông tin hành lý khi đi tour, xách tay dưới 7kg/1khách - kích thước không quá: 56cm x 36cm x 23 cm, chất lỏng với thể tích không quá 100ml. Ký gửi 20kg/1khách - kích thước không quá: 119cm x 119cm x 81cm. Các vật phẩm không được chấp nhận dưới dạng hành lý ký gởi hoặc vận chuyển trong hành lý theo quy định hàng không</p>
+							<p>Trong trường hợp Quý khách cung cấp tên sai, đến trễ giờ bay, vui lòng thanh toán phí đổi vé hoặc mua lại vé mới theo quy định của Hãng Hàng Không (nếu chuyến bay còn chỗ).</p>
+							<p>Trong trường hợp Quý khách bay hãng hàng không Vietnam, Jetstar, Vietjet. Vé máy bay khuyến mãi không hoàn, không đổi, hủy, sai tên mất 100%. Vé Vietnam, Jetstar không bay chặng đi, tự động hủy chặng về.</p>
+							<p>Do các chuyến bay phụ thuộc vào các hãng Hàng Không (Vietnam, Vietjet, Jetstar,..) nên trong một số trường hợp giá vé, chuyến bay, giờ bay có thể thay đổi mà không được báo trước. Tùy vào tình hình thực tế, chương trình và điểm tham quan có thể linh động thay đổi thứ tự các điểm phù hợp điều kiện giờ bay và thời tiết thực tế.</p>
+							<p>iTravel sẽ không chịu trách nhiệm bảo đảm các điểm tham quan trong trường hợp:</p>
+							<ul>
+								<li>Xảy ra thiên tai: bão lụt, hạn hán, động đất…</li>
+								<li>Sự cố về an ninh: khủng bố, biểu tình</li>
+								<li>Sự cố về hàng không: trục trặc kỹ thuật, an ninh, dời, hủy, hoãn chuyến bay</li>
+							</ul>
+							<p>Nếu những trường hợp trên xảy ra, iTravel sẽ xem xét để hoàn trả chi phí không tham quan cho khách trong điều kiện có thể (sau khi đã trừ lại các dịch vụ đã thực hiện….và không chịu trách nhiệm bồi thường thêm bất kỳ chi phí nào khác).</p>
+							<p>Sau khi Quý khách đã làm thủ tục Hàng Không và nhận thẻ lên máy bay, đề nghị Quý khách giữ cẩn thận và lưu ý lên máy bay đúng giờ. iTravel không chịu trách nhiệm trong trường hợp khách làm mất thẻ lên máy bay và không lên máy bay đúng theo giờ quy định của Hàng Không.</p>
+							<p>Giờ nhận phòng & trả phòng theo quy định khách sạn, nhận sau 14:00 giờ và trả trước 12:00 giờ.</p>
+							<p>Phòng khách sạn/resort có thể xảy ra trường hợp phòng không gần nhau, không cùng tầng, loại phòng một giường đôi hoặc hai giường đơn không theo yêu cầu, tùy tình hình thực tế từng khách sạn/Resort.</p>
+							<p>Trường hợp quý khách tham gia tour 01 khách, bắt buộc đóng thêm tiền phụ thu phòng đơn để ở riêng 01 phòng. Trường hợp trong đoàn cũng có khách đi 01 mình, cùng giới tính và có nhu cầu muốn ghép cùng phòng với quý khách thì iTravel sẽ hoàn lại tiền phụ thu phòng đơn cho quý khách.</p>
+							<p>Trường hợp quý khách đi nhóm 03 khách, iTravel sẽ cung cấp 01 phòng dành cho 03 khách là 01 giường lớn 1m6 và 01 giường phụ di động từ 0.8 - 1,2m (extrabed). Trong trường hợp quý khách có nhu cầu ở riêng, vui lòng đóng thêm tiền phụ thu phòng đơn theo quy định.</p>
+							<p>Trong trường hợp Quý khách có yêu cầu nâng chuẩn loại phòng cao cấp hơn vui lòng liên hệ phụ trách tuyến & thanh toán chí phát sinh tùy hạng phòng yêu cầu (nếu có).</p>
+							<p>Đối với các chương trình tham quan biển đảo, trong trường hợp Quý khách không khỏe, có tiền sử bệnh hoặc có chất kích thích trong người (rượu, bia…) thì không nên tắm & lặn biển để đảm bảo sự an toàn.</p>
+							<p>Cam kết đã được tư vấn hiểu rõ và đồng ý các quy định liên quan về điều kiện sức khỏe khi tham gia chương trình du lịch. Khách nữ từ 55 tuổi trở lên và khách nam từ 60 trở lên: nên có người thân dưới 55 tuổi (đầy đủ sức khỏe) đi cùng. Riêng khách từ 70 tuổi trở lên: Bắt buộc phải có người thân dưới 55 tuổi (đầy đủ sức khỏe) đi cùng. Hạn chế nhận khách từ 80 tuổi trở lên. Khách từ 80 tuổi không có chế độ bảo hiểm. Quý khách mang thai vui lòng báo cho nhân viên bán tour ngay tại thời điểm đăng ký. Phải có ý kiến của bác sĩ trước khi đi tour, tự chịu trách nhiệm về sức khỏe của mình và thai nhi trong suốt thời gian tham gia chương trình du lịch. Khi đi tour phải mang theo sổ khám thai và giấy tờ tùy thân theo quy định hãng hàng không. Tuần thai từ 28 tuần trở đi phải mang theo giấy khám thai trong vòng 7 ngày trở lại. Cam kết bản thân và người thân hoàn toàn có đủ sức khỏe để đi du lịch theo chương trình. Đồng ý miễn trừ toàn bộ trách nhiệm pháp lý, không khiếu nại, không yêu cầu bồi thường đối với Vietravel nói chung và nhân viên Vietravel nói riêng về tất cả các vấn đề xảy ra liên quan đến tình trạng sức khỏe của khách hàng khi tham gia tour hoặc sử dụng các dịch vụ do Vietravel cung cấp. Quý khách cam kết tự chịu mọi chi phí phát sinh ngoài chương trình tour liên quan đến việc giải quyết các rủi ro về sức khỏe (lưu trú, vận chuyển, chi phí khám chữa bệnh...) – ngoại trừ các chi phí thuộc hạng mục bảo hiểm sẽ do Công ty Bảo hiểm hoàn trả theo quy định.</p>
+							<p>Quý khách có nhu cầu cần xuất hóa đơn vui lòng cung cấp thông tin xuất hóa đơn cho nhân viên bán tour khi ngay khi đăng ký hoặc trước khi thanh toán hết, không nhận xuất hóa đơn sau khi tour đã kết thúc.</p>
+							<p>Quý khách vui lòng đọc kỹ chương trình, giá tour, các khoản bao gồm cũng như không bao gồm trong chương trình, các điều kiện hủy tour trên biên nhận đóng tiền. Tùy thời điểm đăng ký, kênh bán, giá tour có thể thay đổi. Trong trường hợp Quý khách không trực tiếp đến đăng ký tour mà do người khác đến đăng ký thì Quý khách vui lòng tìm hiểu kỹ chương trình từ người đăng ký cho mình.</p>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="experience-block">
+						<div class="experience-item mb">
+							<input type="radio" id="experience-block-3" name="accordion-toggle">
+							<label for="experience-block-3">Lưu ý khi chuyển/huỷ tour</label>
+							<div id="experience-content-3" class="accordion-text-content">
+								<p>Sau khi thanh toán tiền, nếu Quý khách muốn chuyển/hủy tour xin vui lòng mang Vé Du Lịch đến văn phòng đăng ký tour để làm thủ tục chuyển/hủy tour và chịu chi phí theo quy định của Vietravel. Không giải quyết các trường hợp liên hệ chuyển/hủy tour qua điện thoại.</p>
+							</div>
+						</div>
+					</div>
+					<div class="experience-block">
+						<div class="experience-item mb">
+							<input type="radio" id="experience-block-4" name="accordion-toggle">
+							<label for="experience-block-4">Liên hệ & tư vấn</label>
+								<div id="experience-content-4" class="accordion-text-content">
+									<div class="contact-info row">
+										<div class="col-1 contact-icon">
+											<i class="fa fa-phone"></i>
+										</div>
+										<div class="col-11 g-0">
+											<p>(028) 38351056</p>
+										</div>
+									</div>
+									<div class="contact-info row">
+										<div class="col-1 contact-icon">
+											<i class="fa fa-home"></i>
+										</div>
+										<div class="col-11 g-0">
+											<p>227 Nguyễn Văn Cừ, Quận 5, TP.HCM</p>
+										</div>
+									</div>
+									<div class="contact-info row">
+										<div class="col-1 contact-icon">
+											<i class="fa fa-envelope"></i>
+										</div>
+										<div class="col-11 g-0">
+											<p>iTravelhelp@gmail.com</p>
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div class="experience-block">
+						<div class="experience-item mb">
+							<input type="radio" id="experience-block-6" name="accordion-toggle">
+							<label for="experience-block-6">Các điều kiện huỷ tour</label>
+							<div id="experience-content-6" class="accordion-text-content">
+								<p>Được chuyển sang các tuyến du lịch khác trước ngày khởi hành 20 ngày : Không mất chi phí.</p>
+								<ul>
+									<li>Nếu hủy hoặc chuyển sang các chuyến du lịch khác ngay sau khi đăng ký đến từ 15-19 ngày trước ngày khởi hành: Chi phí hủy tour: 50% tiền cọc tour.</li>
+									<li>Nếu hủy hoặc chuyển sang các chuyến du lịch khác từ 12-14 ngày trước ngày khởi hành: Chi phí hủy tour: 100% tiền cọc tour.</li>
+									<li>Nếu hủy chuyến du lịch trong vòng từ 08-11 ngày trước ngày khởi hành: Chi phí hủy tour: 50% trên giá tour du lịch.</li>
+									<li>Nếu hủy chuyến du lịch trong vòng từ 05-07 ngày trước ngày khởi hành: Chi phí hủy tour: 70% trên giá tour du lịch.</li>
+									<li>Nếu hủy chuyến du lịch trong vòng từ 05-07 ngày trước ngày khởi hành: Chi phí hủy tour: 70% trên giá tour du lịch.</li>
+									<li>Nếu hủy chuyến du lịch trong vòng từ 02-04 ngày trước ngày khởi hành: Chi phí hủy tour: 90% trên giá vé du lịch.</li>
+									<li>Nếu hủy chuyến du lịch trong vòng 1 ngày trước ngày khởi hành : Chi phí hủy tour: 100% trên giá vé du lịch.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="experience-block">
+						<div class="experience-item mb">
+							<input type="radio" id="experience-block-8" name="accordion-toggle">
+							<label for="experience-block-8">Trường hợp bất khả kháng</label>
+							<div id="experience-content-8" class="accordion-text-content">
+								<p>Nếu chương trình du lịch bị hủy bỏ hoặc thay đổi bởi một trong hai bên vì lý do bất khả kháng (hỏa hoạn, thời tiết, tai nạn, thiên tai, chiến tranh, dịch bệnh, hoãn, dời, và hủy chuyến hoặc thay đổi khác của các phương tiện vận chuyển công cộng hoặc các sự việc bất khả kháng khác theo quy định pháp luật…), thì hai bên sẽ không chịu bất kỳ nghĩa vụ bồi hoàn các tổn thất đã xảy ra và không chịu bất kỳ trách nhiệm pháp lý nào. Tuy nhiên mỗi bên có trách nhiệm cố gắng tối đa để giúp đỡ bên bị thiệt hại nhằm giảm thiểu các tổn thất gây ra vì lý do bất khả kháng.</p>
+							</div>
+						</div>
+					</div>
+					<div class="experience-block">
+						<div class="experience-item">
+						<input type="radio" id="experience-block-10" name="accordion-toggle">
+						<label for="experience-block-10">Lưu ý về visa</label>
+						<div id="experience-content-10" class="accordion-text-content">
+							<h4>Điều kiện làm visa: </h4>
+							<p>Quý khách vui lòng chuẩn bị 01 bộ hồ sơ trước ngày khởi hành ít nhất 1,5 tháng. Lưu ý danh mục hồ sơ dưới đây nếu có yêu cầu sao y cần được sao y thị thực trên giấy khổ A4 không cắt gọn, thời gian sao y không quá 6 tháng tính đến ngày đi tour. Các giấy tờ do Ngân hàng cung cấp (Sao kê tài khoản, Giấy xác nhận số dư…) Lãnh sự quán yêu cầu in trước ngày lăn tay không quá 3 ngày nên Quý khách không cần nộp trước. Nhân viên tư vấn Vietravel sẽ nhắc Quý khách liên hệ ngân hàng để chuẩn bị hồ sơ này trước ngày lăn tay.</p>
+							<h5>1. Hồ sơ cá nhân:</h5>
+							<p>Bản gốc hộ chiếu còn thời hạn trên 6 tháng so với ngày kết thúc tour (hộ chiếu nên đi được một số nước) có ký và ghi rõ họ tên người mang hộ chiếu ở trang số 3. Các hộ chiếu gốc cũ (nếu có)</p>
+							<p>02 tấm hình khổ 3,5x4,5cm (nền trắng, mới chụp trong vòng 6 tháng gần nhất). Hình chụp thẳng, thần thái nghiêm trang, phải nhìn thấy tai, chân mày và không đeo mắt kính. Khuôn mặt chiếm 80% khổ hình.</p>
+							<p>Sao y hộ khẩu (tất cả các trang).</p>
+							<p>Sao y giấy chứng nhận kết hôn (nếu đã kết hôn), quyết định ly hôn hoặc nộp kèm giấy chứng tử tùy theo tình trạng hôn nhân hiện tại.</p>
+							<p>Sao y giấy khai sinh (nếu có con, anh chị em ruột đi cùng). Trường hợp trẻ em dưới 18 tuổi đi cùng bố hoặc mẹ thì người còn lại phải nộp sao y chứng minh nhân dân + bản gốc giấy đồng ý cho bé đi cùng bố/ mẹ có xác nhận của địa phương.</p>
+							<h5>2. Các điều kiện cần có:</h5>
+							<p>Công việc:</p>
+							<p>Nếu Quý khách đang đi làm (CB-CNV) cần có: sao y hợp đồng lao động + Bản gốc đơn xin nghỉ phép đi du lịch + bản gốc sao kê tài khoản nhận lương 3 tháng gần nhất đến sát ngày lăn tay (nếu nhận lương qua ngân hàng). Hoặc bảng trích lục lương 3 tháng gần nhất có mộc đỏ công ty (nếu nhận lương bằng tiền mặt) kèm theo sao kê tài khoản cá nhân 3 tháng gần nhất đóng mộc ngân hàng đến sát ngày lăn tay.</p>
+							<p>Nếu Quý khách là chủ doanh nghiệp cần có: sao y Giấy phép Đăng Ký Kinh Doanh + sao y hóa đơn đóng thuế kho bạc 3 tháng gần nhất (Hoặc photo đóng mộc treo công ty nếu nộp thuế qua mạng) + bản gốc sao kê tài khoản cá nhân 3 tháng gần nhất đóng mộc ngân hàng. </p>
+							<p>Nếu Quý khách đã nghỉ hưu cần có: sao y Quyết định nghỉ hưu + sao y thẻ hưu + bản gốc sao kê nhận lương hưu 3 tháng đến sát ngày lăn tay (nếu nhận lương hưu qua ngân hàng) hoặc sao y sổ nhận lương hưu (nếu nhận bằng tiền mặt)</p>
+							<p>Trường hợp là học sinh – sinh viên cần có: bản gốc Giấy xác nhận học sinh, sinh viên của trường + bản gốc đơn xin nghỉ phép đi du lịch</p>
+							<p>Bằng chứng về tài sản: sao y Chủ quyền Nhà, Đất, cà vẹt xe hơi, xe tải kèm theo sao y Hợp đồng cho thuê nếu có.</p>
+							<p>Bằng chứng về tài chính: sao y Sổ tiết kiệm hoặc bản gốc Giấy xác nhận số dư (được in trước ngày lăn tay 3 ngày) tối thiểu là 100 triệu/ khách (ưu tiên lấy sổ có giá trị tiền gửi cao và đã mở lâu).</p>
+							<p style="font-family: noto-sans-sb">* Trên đây là những thủ tục để xin visa Schengen theo quy định của Lãnh sự Pháp. Tùy vào mỗi trường hợp, trong quá trình xét visa lãnh sự có thể yêu cầu quý khách bồ sung thêm giấy tờ nếu thấy cần thiết.</p>
+							<p style="font-family: noto-sans-sb">Lưu ý: Đại sứ quán & Tổng lãnh sự quán các nước thuộc hiệp ước Schengen yêu cầu các đương đơn xin visa du lịch theo đoàn phải trình lại lại hộ chiếu bản chính sau khi kết thúc hành trình. Quý khách vui lòng bàn giao lại hộ chiếu bản chính cho trưởng đoàn tại sân bay Tân Sơn Nhất vào ngày về để trình diện theo đúng thủ tục.</p>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container mb-5 mt-5">
+		<div class="tour-break-line"></div>
+	</div>
+	
+	<div class="container mt-5 mb-5 tour-iteration">
+		<div class="iTravel-label mb-5">
+			<h1 class="iTravel-word">ĐÁNH GIÁ</h1><img src="images/khampha-label-line.png" alt="">
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<div class="total-point">
+					<p>Điểm</p>
+					<h1><span>4.4</span>/5</h1>
+					<ul>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star"></i></li>
+						<li><i class="fa fa-star-half-o"></i></li>
+					</ul>
+					<h6>12 review</h6>
+				</div>
+			</div>
+			<div class="col-9">
+				<div id="top-review-carousel">
+					<div class="swiper top-review-content">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="review-block">
+									<div class="user-info-review">
+										<i class="fa fa-user"></i>
+										<h5>Nguyễn Văn A</h5>
+									</div>
+									<div class="user-point">
+										<ul>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+										</ul>
+										<div class="point-num">
+											5
+										</div>
+									</div>
+									<p>Cảm ơn vì đã tổ chức một tour tuyệt vời như vậy. Con người thân thiện, cảnh vật đẹp và thức ăn ngon. Rất đáng tiền. Đây là một chuyến đi đáng nhớ!! Hẹn gặp lại một ngày gần nhất!</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="review-block">
+									<div class="user-info-review">
+										<i class="fa fa-user"></i>
+										<h5>Nguyễn Văn A</h5>
+									</div>
+									<div class="user-point">
+										<ul>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+										</ul>
+										<div class="point-num">
+											5
+										</div>
+									</div>
+									<p>Cảm ơn vì đã tổ chức một tour tuyệt vời như vậy. Con người thân thiện, cảnh vật đẹp và thức ăn ngon. Rất đáng tiền. Đây là một chuyến đi đáng nhớ!! Hẹn gặp lại một ngày gần nhất!</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="review-block">
+									<div class="user-info-review">
+										<i class="fa fa-user"></i>
+										<h5>Nguyễn Văn A</h5>
+									</div>
+									<div class="user-point">
+										<ul>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+										</ul>
+										<div class="point-num">
+											5
+										</div>
+									</div>
+									<p>Cảm ơn vì đã tổ chức một tour tuyệt vời như vậy. Con người thân thiện, cảnh vật đẹp và thức ăn ngon. Rất đáng tiền. Đây là một chuyến đi đáng nhớ!! Hẹn gặp lại một ngày gần nhất!</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="review-block">
+									<div class="user-info-review">
+										<i class="fa fa-user"></i>
+										<h5>Nguyễn Văn A</h5>
+									</div>
+									<div class="user-point">
+										<ul>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+										</ul>
+										<div class="point-num">
+											5
+										</div>
+									</div>
+									<p>Cảm ơn vì đã tổ chức một tour tuyệt vời như vậy. Con người thân thiện, cảnh vật đẹp và thức ăn ngon. Rất đáng tiền. Đây là một chuyến đi đáng nhớ!! Hẹn gặp lại một ngày gần nhất!</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="review-block">
+									<div class="user-info-review">
+										<i class="fa fa-user"></i>
+										<h5>Nguyễn Văn A</h5>
+									</div>
+									<div class="user-point">
+										<ul>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+										</ul>
+										<div class="point-num">
+											5
+										</div>
+									</div>
+									<p>Cảm ơn vì đã tổ chức một tour tuyệt vời như vậy. Con người thân thiện, cảnh vật đẹp và thức ăn ngon. Rất đáng tiền. Đây là một chuyến đi đáng nhớ!! Hẹn gặp lại một ngày gần nhất!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+				</div>
+			</div>
+		</div>
+		<div class="destination-all mt-5">
+			<a href="#" class="see-all-button">ĐÁNH GIÁ</a>
+		</div>
+	</div>
+	
+	<div class="container mb-5 mt-5">
+		<div class="tour-break-line"></div>
+	</div>
+	
+	<div class="container-fluid tour-swiper mt-3 mb-5" style="position: relative" id="tour-carousel">
+	  	<div class="swiper container tour-slider-content">
+			<div class="iTravel-label">
+				<h1 class="iTravel-word">TOUR</h1><img src="images/tour-label-line.png" alt="">
+			</div>
+		  	<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="swiper-slide"><div class="tour-content"><div class="tour-image"><a href="#" class="tour-thumbnail"><img src="images/tour-thumbnail/tour-1/tour-1-thumbnail.png" alt="" style="width: 100%"></a></div><div class="tour-info"><h6>Châu Âu - Pháp - Bỉ - Hà Lan - Đức</h6><a href="#">Tour Tây Âu (Paris - Amsterdam)</a></div><div class="tour-break-line"></div><div class="tour-time-depart"><div class="tour-detail"><i class="fa fa-calendar"></i><p><span>Thời gian: </span>9 ngày 8 đêm</p></div><div class="tour-detail"><i class="fa fa-flag"></i><p><span>Xuất phát: </span>TP.HCM</p></div></div><div class="tour-break-line"></div><div class="tour-review-price"><a href="#">Xem chi tiết</a><h4><span>từ </span>82,000,000 đ</h4></div></div></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide"><div class="tour-content"><div class="tour-image"><a href="#" class="tour-thumbnail"><img src="images/tour-thumbnail/tour-1/tour-1-thumbnail.png" alt="" style="width: 100%"></a></div><div class="tour-info"><h6>Châu Âu - Pháp - Bỉ - Hà Lan - Đức</h6><a href="#">Tour Tây Âu (Paris - Amsterdam)</a></div><div class="tour-break-line"></div><div class="tour-time-depart"><div class="tour-detail"><i class="fa fa-calendar"></i><p><span>Thời gian: </span>9 ngày 8 đêm</p></div><div class="tour-detail"><i class="fa fa-flag"></i><p><span>Xuất phát: </span>TP.HCM</p></div></div><div class="tour-break-line"></div><div class="tour-review-price"><a href="#">Xem chi tiết</a><h4><span>từ </span>82,000,000 đ</h4></div></div></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide"><div class="tour-content"><div class="tour-image"><a href="#" class="tour-thumbnail"><img src="images/tour-thumbnail/tour-1/tour-1-thumbnail.png" alt="" style="width: 100%"></a></div><div class="tour-info"><h6>Châu Âu - Pháp - Bỉ - Hà Lan - Đức</h6><a href="#">Tour Tây Âu (Paris - Amsterdam)</a></div><div class="tour-break-line"></div><div class="tour-time-depart"><div class="tour-detail"><i class="fa fa-calendar"></i><p><span>Thời gian: </span>9 ngày 8 đêm</p></div><div class="tour-detail"><i class="fa fa-flag"></i><p><span>Xuất phát: </span>TP.HCM</p></div></div><div class="tour-break-line"></div><div class="tour-review-price"><a href="#">Xem chi tiết</a><h4><span>từ </span>82,000,000 đ</h4></div></div></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide"><div class="tour-content"><div class="tour-image"><a href="#" class="tour-thumbnail"><img src="images/tour-thumbnail/tour-1/tour-1-thumbnail.png" alt="" style="width: 100%"></a></div><div class="tour-info"><h6>Châu Âu - Pháp - Bỉ - Hà Lan - Đức</h6><a href="#">Tour Tây Âu (Paris - Amsterdam)</a></div><div class="tour-break-line"></div><div class="tour-time-depart"><div class="tour-detail"><i class="fa fa-calendar"></i><p><span>Thời gian: </span>9 ngày 8 đêm</p></div><div class="tour-detail"><i class="fa fa-flag"></i><p><span>Xuất phát: </span>TP.HCM</p></div></div><div class="tour-break-line"></div><div class="tour-review-price"><a href="#">Xem chi tiết</a><h4><span>từ </span>82,000,000 đ</h4></div></div></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide"><div class="tour-content"><div class="tour-image"><a href="#" class="tour-thumbnail"><img src="images/tour-thumbnail/tour-1/tour-1-thumbnail.png" alt="" style="width: 100%"></a></div><div class="tour-info"><h6>Châu Âu - Pháp - Bỉ - Hà Lan - Đức</h6><a href="#">Tour Tây Âu (Paris - Amsterdam)</a></div><div class="tour-break-line"></div><div class="tour-time-depart"><div class="tour-detail"><i class="fa fa-calendar"></i><p><span>Thời gian: </span>9 ngày 8 đêm</p></div><div class="tour-detail"><i class="fa fa-flag"></i><p><span>Xuất phát: </span>TP.HCM</p></div></div><div class="tour-break-line"></div><div class="tour-review-price"><a href="#">Xem chi tiết</a><h4><span>từ </span>82,000,000 đ</h4></div></div></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="swiper-slide"><div class="tour-content"><div class="tour-image"><a href="#" class="tour-thumbnail"><img src="images/tour-thumbnail/tour-1/tour-1-thumbnail.png" alt="" style="width: 100%"></a></div><div class="tour-info"><h6>Châu Âu - Pháp - Bỉ - Hà Lan - Đức</h6><a href="#">Tour Tây Âu (Paris - Amsterdam)</a></div><div class="tour-break-line"></div><div class="tour-time-depart"><div class="tour-detail"><i class="fa fa-calendar"></i><p><span>Thời gian: </span>9 ngày 8 đêm</p></div><div class="tour-detail"><i class="fa fa-flag"></i><p><span>Xuất phát: </span>TP.HCM</p></div></div><div class="tour-break-line"></div><div class="tour-review-price"><a href="#">Xem chi tiết</a><h4><span>từ </span>82,000,000 đ</h4></div></div></div>
+				</div>
+			</div>
+		 </div>
+		  <div class="swiper-button-next"></div>
+      		<div class="swiper-button-prev"></div>
+		<div class="destination-all mt-3">
+			<a href="#" class="see-all-button">XEM TẤT CẢ</a>
+		</div>
+	  </div>
+	
+	<div class="container">
+		<div class="tour-break-line mt-5 mb-5"></div>
+		<div class="iTravel-label mb-4 mt-3">
+			<h1 class="iTravel-word" style="font-size: 25px">TOUR Ở KHU VỰC KHÁC Ở CHÂU ÂU</h1>
+		</div>
+		<div class="other-europe-region mb-3">
+			<a href="#">BALKAN</a>
+			<a href="#">NAM ÂU</a>
+			<a href="#">TRUNG ÂU</a>
+			<a href="#">TÂY ÂU</a>
+			<a href="#">ĐÔNG ÂU</a>
+			<a href="#">BẮC ÂU</a>
+		</div>
+		<div class="tour-break-line mt-5 mb-5"></div>
+		<div class="iTravel-label mb-4 mt-3">
+			<h1 class="iTravel-word" style="font-size: 25px">TOUR Ở CHÂU LỤC KHÁC</h1>
+		</div>
+		<div class="other-world-region mb-5">
+			<a href="#">CHÂU ÂU</a>
+			<a href="#">CHÂU Á - ÚC</a>
+			<a href="#">CHÂU PHI - Ả RẬP</a>
+			<a href="#">CHÂU MỸ</a>
+		</div>
+	</div>
+	
+	<div class="container-fluid iTravel-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-5">
+					<div class="iTravel-footer-content row">
+						<div class="col-12">
+							<img src="images/itravel_logo.png" alt="">
+						</div>
+						<h5>SUBSCRIBE US</h5>
+						<div class="col-9 footer-subscribe">
+							<input type="text" placeholder="Enter your email">
+						</div>
+						<div class="col-3 footer-button">
+							<button class="footer-button-subscribe">SUBSCRIBE</button>
+						</div>
+						<h5>FOLLOW US</h5>
+						<ul class="iTravel-social-media">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						</ul>
+						<h5>CONTACT US</h5>
+						<div class="contact-footer">
+							<div class="contact-info row">
+								<div class="col-1 contact-icon">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="col-11 g-0">
+									<p>(028) 38351056</p>
+								</div>
+							</div>
+							<div class="contact-info row">
+								<div class="col-1 contact-icon">
+									<i class="fa fa-home"></i>
+								</div>
+								<div class="col-11 g-0">
+									<p>227 Nguyễn Văn Cừ, Quận 5, TP.HCM</p>
+								</div>
+							</div>
+							<div class="contact-info row">
+								<div class="col-1 contact-icon">
+											<i class="fa fa-envelope"></i>
+										</div>
+								<div class="col-11 g-0">
+											<p>iTravelhelp@gmail.com</p>
+										</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-7">
+					<div class="footer-menu row">
+						<div class="col-4 footer-list">
+							<h5>THÀNH PHỐ</h5>
+							<ul>
+								<li><a href="#">Venice</a></li>
+								<li><a href="#">Tokyo</a></li>
+								<li><a href="#">Los Angeles</a></li>
+								<li><a href="#">Bangkok</a></li>
+								<li><a href="#">Rio de Janeiro</a></li>
+								<li><a href="#">Casablanca</a></li>
+							</ul>
+						</div>
+						<div class="col-4 footer-list">
+							<h5>TOURS</h5>
+							<ul>
+								<li><a href="#">Du lịch lịch sử, văn hoá</a></li>
+								<li><a href="#">Du lịch sinh thái</a></li>
+								<li><a href="#">Du lịch hành hương</a></li>
+								<li><a href="#">Du lịch khám phá</a></li>
+								<li><a href="#">Du lịch nghỉ dưỡng</a></li>
+								<li><a href="#">Du lịch thế thao</a></li>
+							</ul>
+						</div>
+						<div class="col-4 footer-list">
+							<h5>TRÒ CHƠI</h5>
+							<ul>
+								<li><a href="#">Đoán chữ</a></li>
+								<li><a href="#">Cặp bài trùng</a></li>
+								<li><a href="#">Câu hỏi</a></li>
+								<li><a href="#">Tìm từ</a></li>
+							</ul>
+						</div>
+						<div class="col-4 footer-list">
+							<h5>QUỐC GIA</h5>
+							<ul>
+								<li><a href="#">Pháp</a></li>
+								<li><a href="#">Nhật Bản</a></li>
+								<li><a href="#">Ai Cập</a></li>
+								<li><a href="#">Hoa Kỳ</a></li>
+								<li><a href="#">Đức</a></li>
+								<li><a href="#">Úc</a></li>
+							</ul>
+						</div>
+						<div class="col-4 footer-list">
+							<h5>BLOG</h5>
+							<ul>
+								<li><a href="#">Khám phá</a></li>
+								<li><a href="#">Kinh nghiệm</a></li>
+								<li><a href="#">Tin tức</a></li>
+								<li><a href="#">Hành trình</a></li>
+							</ul>
+						</div>
+						<div class="col-4 footer-list">
+							<h5>LIÊN HỆ</h5>
+							<ul>
+								<li><a href="#">Về chúng tôi</a></li>
+								<li><a href="#">Liên hệ</a></li>
+								<li><a href="#">Chính sách bảo mật</a></li>
+								<li><a href="#">Cơ hội việc làm</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="JS/mapbox-gl.js"></script>
+	<script src="JS/destination-city.js"></script>
+	<script src="JS/swiper-bundle.min.js"></script>
+	<script src="JS/tour-map.js"></script>
+	<script>
+		// Tour Slider
+		var swiper3 = new Swiper(".tour-slider-content", {
+        slidesPerView: 4,
+        slidesPerGroup: 1,
+        loop: true,
+        navigation: {
+          nextEl: "#tour-carousel .swiper-button-next",
+          prevEl: "#tour-carousel .swiper-button-prev",
+        },
+      });
+		
+		var swiper4 = new Swiper(".top-review-content", {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        loop: true,
+        navigation: {
+          nextEl: "#top-review-carousel .swiper-button-next",
+          prevEl: "#top-review-carousel .swiper-button-prev",
+        },
+      });
+	</script>
+</body>
+</html>
