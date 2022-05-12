@@ -3,110 +3,20 @@
     {
       "type": "Feature",
       "properties": {
-        "place_name": "Fussen",
+        "place_name": "Bavarian Alps",
         "region_name": "Bavaria",
         "country_name": "Đức",
-		"place_description": "Tọa lạc tại một danh lam thắng cảnh dưới chân dãy Alps, Fussen là điểm dừng chân cuối cùng trên Con đường Lãng mạn và có thể được tìm thấy ngay ở phía Nam của Bavaria, chỉ cách biên giới với Áo một km. Mặc dù thị trấn đẹp mê hồn rất đáng để khám phá, nhưng hầu hết mọi người đều ghé thăm ba lâu đài cổ tích nằm gần đó.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/bavaria/fussen/"
+        "img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/bavaria/bavarian-alps/",
+        "place_description": "Những ngọn núi phủ linh sam, những đỉnh đá, những ngọn núi đá, và những ngôi nhà phủ đầy phong lữ: Dãy Alps ở Bavarian gần nhất với những gì mà nhiều người trong chúng ta hình dung là \"nước Đức\". Những thị trấn cổ kính với những ngôi nhà nửa gỗ được đắp bích họa trong tuyết nổi lên giữa những đỉnh núi và những hồ nước ẩn hiện lung linh, cũng như những tác phẩm của Vua Ludwig II, một trong những vị vua cuối cùng của Bavaria. Toàn bộ khu vực có rất nhiều cơ hội thể thao quanh năm."
       },
       "geometry": {
         "coordinates": [
-          10.697709,
-          47.570921
+          10.749992,
+          47.557591
         ],
         "type": "Point"
       },
-      "id": 0
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "place_name": "Dusseldorf",
-        "region_name": "North Rhine-Westphalia",
-        "country_name": "Đức",
-		"place_description": "Được coi là một trong những thành phố quốc tế nhất của Đức - xét cho cùng, nó gần Amsterdam hơn rất nhiều so với Berlin - Dusseldorf tạo nên một kỳ nghỉ đô thị châu Âu lộng lẫy. Danh tiếng là một địa điểm trẻ trung, sôi động và hợp thời trang có liên quan nhiều đến vị thế là một trong những thành phố đại học hàng đầu của Đức cũng như lịch sử văn hóa phong phú của nó.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/north-rhine-westphalia/dusseldorf/"
-      },
-      "geometry": {
-        "coordinates": [
-          6.776314,
-          51.225402
-        ],
-        "type": "Point"
-      },
-      "id": 1
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "place_name": "Cologne",
-        "region_name": "North Rhine-Westphalia",
-        "country_name": "Đức",
-		"place_description": "Cologne là một trong những thành phố cổ tuyệt vời của Đức đã cố gắng bảo tồn quá khứ của nó cho các thế hệ hiện đại tận hưởng. Ban đầu được người La Mã định cư, trong nhiều thế kỷ, Cologne là trung tâm tôn giáo quan trọng và là nơi hành hương.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/north-rhine-westphalia/cologne/"
-      },
-      "geometry": {
-        "coordinates": [
-          6.959974,
-          50.938361
-        ],
-        "type": "Point"
-      },
-      "id": 2
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "place_name": "Berlin",
-        "region_name": "Berlin",
-        "country_name": "Đức",
-		"place_description": "Berlin được coi là một trong những điểm đến văn hóa hàng đầu của Châu Âu, nơi có vô số phòng trưng bày nghệ thuật đặc sắc và bảo tàng chỉ chờ được khám phá. Một số trong số những nơi tốt nhất nằm trên Đảo Bảo tàng, một điểm đến không thể bỏ qua mà chỉ riêng bạn có thể mất nhiều ngày để khám phá.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/berlin/"
-      },
-      "geometry": {
-        "coordinates": [
-          13.38333,
-          52.51667
-        ],
-        "type": "Point"
-      },
-      "id": 3
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "place_name": "Hamburg",
-        "region_name": "Hamburg",
-        "country_name": "Đức",
-		"place_description": "Những ai muốn trải nghiệm sự hiếu khách tuyệt vời của người dân cực bắc của Đức sẽ rất vui lòng cân nhắc đến thăm thành phố Hamburg. Thành phố lớn thứ hai của đất nước nằm trên cửa sông Elbe, một khoảng cách ngắn từ Biển Bắc, một vị trí đã đảm bảo tầm quan trọng của nó như một cảng quan trọng nhất của đất nước.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/hamburg/"
-      },
-      "geometry": {
-        "coordinates": [
-          10,
-          53.55
-        ],
-        "type": "Point"
-      },
-      "id": 4
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "place_name": "Dresden",
-        "region_name": "Saxony",
-        "country_name": "Đức",
-		"place_description": "Nhờ vị trí của nó chỉ cách biên giới của Đức với Cộng hòa Séc vài dặm, thành phố lịch sử Dresden trở thành một cơ sở tuyệt vời để khám phá không chỉ phần phía đông của đất nước mà còn cả Đông Âu. Nằm ở một khu vực trũng của thung lũng Elbe phía trên, thành phố này lần đầu tiên được sinh sống nhờ những vùng đất màu mỡ, khung cảnh tuyệt đẹp, khí hậu ôn hòa và khả năng tiếp cận các tuyến đường thương mại quan trọng của châu Âu.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/saxony/dresden/"
-      },
-      "geometry": {
-        "coordinates": [
-          13.738144,
-          51.049329
-        ],
-        "type": "Point"
-      },
-      "id": 5
+      "id": "0"
     },
     {
       "type": "Feature",
@@ -114,8 +24,8 @@
         "place_name": "Heidelberg",
         "region_name": "Baden-Württemberg",
         "country_name": "Đức",
-		"place_description": "Với những kho tàng lịch sử như Cầu cổ thời Trung cổ, Lâu đài Heidelberg, Nhà thờ Chúa Thánh Thần và Nhà Hiệp sĩ Thánh George, không có gì lạ khi Heidelberg là một điểm thu hút khách du lịch nổi tiếng. Con phố chính của trung tâm thành phố, Haupstrasse, tập trung nhiều quán rượu, nhà hàng, quán cà phê ngoài trời, cửa hàng và chợ bán các loại bia như bia, đồng hồ cúc cu và xúc xích Đức.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/baden-wurttemberg/heidelberg/"
+        "img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/baden-wurttemberg/heidelberg/",
+        "place_description": "Nằm ở thung lũng sông Neckar, Heidelberg là một trong những điểm du lịch nổi tiếng nhất của Đức. Trong Thế chiến thứ hai, thành phố gần như hoàn toàn không bị ảnh hưởng bởi các cuộc ném bom của quân đồng minh đã phá hủy hầu hết các thành phố lớn hơn bên trong của Đức. Do đó, Heidelberg vẫn giữ được nét quyến rũ theo phong cách baroque của những con phố hẹp, những ngôi nhà đẹp như tranh vẽ và Lâu đài Heidelberg nổi tiếng."
       },
       "geometry": {
         "coordinates": [
@@ -124,52 +34,52 @@
         ],
         "type": "Point"
       },
-      "id": 6
+      "id": "1"
     },
     {
       "type": "Feature",
       "properties": {
-        "place_name": "Thung lũng sông Rhine",
-        "region_name": "Rhineland",
+        "place_name": "Đông Đức",
+        "region_name": "Saxony",
         "country_name": "Đức",
-		"place_description": "Trải dài giữa các thành phố Bingen và Bonn, Đức, sông Middle Rhine chảy qua một quá trình hình thành địa chất ấn tượng được gọi là Rhine Gorge. Vùng này có cảnh quan ngoạn mục rải rác với những lâu đài thời trung cổ, những ngôi làng đẹp như tranh vẽ và những vườn nho bậc thang. Du lịch phát triển mạnh mẽ ở đây sau khi những du khách thuộc tầng lớp quý tộc chú ý nhiều đến khu vực trong thời kỳ Chủ nghĩa Lãng mạn của thế kỷ 19 và khu vực này được biết đến với cái tên Rhine Lãng mạn. Nguồn cảm hứng đằng sau các bài thơ, hội họa, vở opera và truyền thuyết, sông Rhine lãng mạn ngày nay là một điểm đến du lịch lớn ở Đức.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/rhineland/rhine-valley/"
+        "img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/east-germany/",
+        "place_description": "Sự quyến rũ truyền thống của Đức được thể hiện rõ nhất ở các bang miền đông Saxony, Sachsen-Anhalt và Thuringia. Mặc dù khu vực này đã hình thành nên cốt lõi văn hóa của Đông Đức trước đây, những ngọn đồi nhấp nhô, những vườn cỏ bậc thang và những thành phố được khôi phục tuyệt vời nói lên một khu vực được tái sinh và tái lập thành vùng đất trung tâm của nước Đức. Khu vực này đôi khi có một chút dữ dội, nhưng trạng thái tinh thần hoang sơ độc đáo của Đức chiếm ưu thế."
       },
       "geometry": {
         "coordinates": [
-          7.594395,
-          50.353328
+          13.741601,
+          51.051958
         ],
         "type": "Point"
       },
-      "id": 7
+      "id": "11"
     },
     {
       "type": "Feature",
       "properties": {
-        "place_name": "Nuremberg",
+        "place_name": "Franconia",
         "region_name": "Bavaria",
         "country_name": "Đức",
-		"place_description": "Khu vực Phố Cổ thời trung cổ hấp dẫn của Nuremberg (Nürnberg) ngày nay là minh chứng không chỉ cho truyền thống văn hóa phong phú đã hình thành nước Đức, mà còn cho sự khéo léo hiện đại của đất nước. Sau khi bị tàn phá gần như hoàn toàn trong Thế chiến 2, phần lớn các kiến trúc thời trung cổ nổi tiếng của thành phố - trước đây chưa bị đụng đến trong nhiều thế kỷ - bắt buộc phải xây dựng lại.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/bavaria/nuremberg/"
+        "img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/bavaria/franconia/",
+        "place_description": "Tất cả những gì còn lại của vương quốc Franks khổng lồ, cổ đại là khu vực ngày nay được gọi là Franken (Franconia), trải dài từ Rừng Bohemian ở biên giới Séc đến ngoại ô Frankfurt. Người Frank không chỉ là những chiến binh gan lì mà còn là những người lao động chăm chỉ, những người buôn bán nhạy bén và những tên trộm có mũi chính trị giỏi."
       },
       "geometry": {
         "coordinates": [
-          11.077298,
-          49.453872
+          10.914203,
+          49.66201
         ],
         "type": "Point"
       },
-      "id": 8
+      "id": "12"
     },
     {
       "type": "Feature",
       "properties": {
-        "place_name": "Rothenburg",
+        "place_name": "Con đường mộng mơ",
         "region_name": "Bavaria",
         "country_name": "Đức",
-		"place_description": "Nổi tiếng với khu phố cổ thời Trung cổ tráng lệ, kiến trúc được bảo tồn tốt và những con đường rải sỏi duyên dáng, Rothenburg ob der Tauber là một trong những điểm dừng chân nổi tiếng nhất dọc theo Con đường Lãng mạn của Đức. Rothenburg cũng nổi tiếng với các cửa hàng bán đồ Giáng sinh quanh năm và có chợ Giáng sinh nổi bật vào tháng 12 hàng năm.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/bavaria/rothenburg/"
+        "img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/bavaria/romantic-road/",
+        "place_description": "Không nơi nào kêu \"tiếng Đức tinh túy\" khá lớn như Romantische Strasse, hay Con đường Lãng mạn, cách 355 km (220 dặm) lái xe qua vùng nông thôn trung tâm nam. Với 28 ngôi làng mái đỏ truyền thống, một số ngôi làng vẫn mang nét kiến trúc thời Trung cổ, vươn ra khỏi khung cảnh mục vụ, tuyến đường này cũng rất đáng nhớ với những lâu đài, tu viện và nhà thờ ẩn mình bên ngoài những ngọn đồi thấp, những ngọn tháp và ngọn tháp của chúng chỉ có thể nhìn thấy qua cây xanh ."
       },
       "geometry": {
         "coordinates": [
@@ -178,7 +88,43 @@
         ],
         "type": "Point"
       },
-      "id": 9
+      "id": "13"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Bở biển Baltic",
+        "region_name": "Schleswig Holstein",
+        "country_name": "Đức",
+        "img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/north-germany/baltic-sea/",
+        "place_description": "Miền bắc thực sự của Đức là một khu vực yên tĩnh và thanh bình, nhưng rất đáng tự hào về vị thế trong quá khứ là một trong những trung tâm thương mại hùng mạnh nhất ở châu Âu. Không khí mặn mòi và cảnh quan tươi tốt, xanh tươi của đầm lầy, bãi biển dài bất tận, làng chài, hồ nước là thú vui chính ở đây chứ không phải tham quan. Bờ biển Baltic là một trong những nơi được ghé thăm nhiều nhất của Đức, nhưng vì hầu hết du khách là người Đức, bạn sẽ cảm thấy như mình đã khám phá ra bí mật được giữ kín tốt nhất của Đức."
+      },
+      "geometry": {
+        "coordinates": [
+          10.679786,
+          53.866188
+        ],
+        "type": "Point"
+      },
+      "id": "3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "place_name": "Con đường thần tiên",
+        "region_name": "Lower Saxony",
+        "country_name": "Đức",
+        "img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/north-germany/fairytale-road/",
+        "place_description": "Với cái tên gợi liên tưởng đến phép thuật và phiêu lưu, Con đường cổ tích (Märchenstrasse) đưa du khách đi trên con đường xuyên qua vùng đất của Anh em nhà Grimm và một vùng nông thôn trập trùng với những cánh đồng và rừng rậm, nơi truyền cảm hứng cho những câu chuyện về nàng công chúa ngủ trong rừng, những con sói đói và bánh gừng những ngôi nhà. Chảy qua trung tâm miền Tây nước Đức đến bờ Biển Bắc của nó, tàu Märchenstrasse dừng dọc đường tại các thị trấn và làng mạc nơi hai anh em đã dành phần lớn cuộc đời của họ hai thế kỷ trước."
+      },
+      "geometry": {
+        "coordinates": [
+          9.308441,
+          52.839078
+        ],
+        "type": "Point"
+      },
+      "id": "4"
     },
     {
       "type": "Feature",
@@ -186,71 +132,53 @@
         "place_name": "Rừng Đen",
         "region_name": "Baden-Württemberg",
         "country_name": "Đức",
-		"place_description": "Được đặt theo tên của những khu rừng rậm rạp, tối tăm bao phủ các thung lũng, đồi và núi, Rừng Đen nằm nép mình ở góc Tây Nam của nước Đức. Một trong những địa điểm tham quan đẹp như tranh vẽ và nổi tiếng ở Đức, đây là nơi có rất nhiều cảnh quan thiên nhiên, các thị trấn và làng mạc quyến rũ.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/baden-wurttemberg/black-forest/"
+        "img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/baden-wurttemberg/black-forest/",
+        "place_description": "Schwarzwald, hay Rừng Đen, có thể được tìm thấy ở góc tây nam của đất nước. Tên gọi xuất phát từ những tán cây dày, và khu rừng là thánh địa cho những ai yêu thích cảnh đẹp và giải trí ngoài trời. Đi bộ đường dài, bơi lội trong các hồ nước lạnh giá trên dãy núi Alps và đi xe đạp leo núi là những trò tiêu khiển phổ biến, nhưng Black Forest cũng có một số lựa chọn thay thế cho đô thị. Trong rừng là một số thị trấn và thành phố. Baden-Baden là một nơi nghỉ dưỡng spa nổi tiếng thế giới, hoàn hảo để thư giãn, và Freiburg là một thị trấn đại học nhộn nhịp với ẩm thực tuyệt vời và cuộc sống về đêm."
       },
       "geometry": {
         "coordinates": [
-          8.241524,
-          48.758078
+          8.176408,
+          48.189178
         ],
         "type": "Point"
       },
-      "id": 10
+      "id": "5"
     },
     {
       "type": "Feature",
       "properties": {
-        "place_name": "Lubeck",
-        "region_name": "Schleswig-Holstein",
+        "place_name": "Berlin",
+        "region_name": "Berlin",
         "country_name": "Đức",
-		"place_description": "Là một trong những cảng biển Baltic lớn nhất ở Đức, Lubeck nằm ở bang Schleswig-Holstein ở cực bắc của đất nước. Được thành lập vào năm 1143, Lubeck đã phục vụ trong nhiều thế kỷ với tư cách là thủ phủ của Liên đoàn Hanseatic. Mặc dù là thành phố đầu tiên của Đức bị đánh bom và hư hại trong Thế chiến thứ hai, nhưng Lubeck vẫn giữ được phần lớn kiến trúc thời Trung cổ, khiến nơi đây trở thành một địa điểm du lịch nổi tiếng.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/schleswig-holstein/lubeck/"
+        "img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/east-germany/berlin/",
+        "place_description": "Berlin năng động, sành điệu đã thu hút sự chú ý của thế giới với cuộc sống đô thị hoa lệ và khung cảnh nghệ thuật sôi động. Đã qua rồi thời Chiến tranh Lạnh buồn tẻ nước Đức và một thành phố bị chia cắt bởi Bức tường. Ở thủ đô quốc tế và giá cả phải chăng này, các khu phố như Mitte, Friedrichshain, Prenzlauer Berg và Kreuzberg nhộn nhịp với các nhà hàng, quán cà phê và cuộc sống về đêm. Các bảo tàng và điểm tham quan như Pergamon trên Đảo Bảo tàng, Cổng Brandenburg và Bảo tàng Do Thái cung cấp một cửa sổ vào lịch sử phong phú của Berlin. Hôm nay trái tim được khâu lại với nhau của Đức đập nhanh."
       },
       "geometry": {
         "coordinates": [
-          10.684738,
-          53.866444
+          13.397708,
+          52.520301
         ],
         "type": "Point"
       },
-      "id": 11
+      "id": "6"
     },
     {
       "type": "Feature",
       "properties": {
-        "place_name": "Frankfurt",
-        "region_name": "Hesse",
+        "place_name": "Rhineland",
+        "region_name": "Tây Đức",
         "country_name": "Đức",
-		"place_description": "Frankfurt từ lâu đã là một trong những thành phố quan trọng nhất của Đức. Trong nhiều thế kỷ là một quốc gia thành phố độc lập, nhiều tòa nhà cổ kính và các điểm tham quan đẳng cấp thế giới và những hoạt động thú vị để làm ở đây khiến thành phố cố đô lịch sử này trở thành một nơi tuyệt vời để dành kỳ nghỉ cuối tuần hoặc thậm chí lâu hơn nếu bạn đang tìm kiếm một căn cứ từ đó để khám phá vùng nông thôn xung quanh.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/hesse/frankfurt/"
+        "img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/west-germany/rhine-valley/",
+        "place_description": "Bờ sông Rhine được tôn lên bởi lâu đài tráng lệ này đến lâu đài khác và bởi những ngọn đồi trồng nho ngoạn mục, cung cấp sinh kế cho nhiều ngôi làng nằm ôm lấy bờ biển. Theo lời của nhà thơ Pháp Victor Hugo, 'Sông Rhine kết hợp tất cả mọi thứ. Sông Rhine nhanh nhẹn như sông Rhône, rộng như sông Loire, uốn lượn như sông Seine. Hoàng gia như sông Danube và được bao phủ bởi những câu chuyện ngụ ngôn và huyền ảo như một dòng sông ở châu Á'. "
       },
       "geometry": {
         "coordinates": [
-          8.682092,
-          50.110644
+          7.594395,
+          50.353328
         ],
         "type": "Point"
       },
-      "id": 12
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "place_name": "Leipzig",
-        "region_name": "Saxony",
-        "country_name": "Đức",
-		"place_description": "Thành phố lớn nhất ở bang Sachsen liên bang của Đức, Leipzig thường được gọi là Thành phố Anh hùng vì vai trò hàng đầu của nó trong cuộc cách mạng dân chủ năm 1989 và sự sụp đổ của Bức tường Berlin. Leipzig cũng được biết đến với nền văn hóa và nghệ thuật sôi động được tạo hình bởi các nhà soạn nhạc nổi tiếng như Bach, Richard Wagner và Felix Mendelssohn. Khách du lịch ngày nay có thể thưởng thức các buổi biểu diễn âm nhạc của Bach tại Nhà thờ St. Thomas, nơi Bach từng là trưởng ca đoàn và hiện đã được chôn cất.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/saxony/leipzig/"
-      },
-      "geometry": {
-        "coordinates": [
-          12.374733,
-          51.340632
-        ],
-        "type": "Point"
-      },
-      "id": 13
+      "id": "7"
     },
     {
       "type": "Feature",
@@ -258,107 +186,35 @@
         "place_name": "Munich",
         "region_name": "Bavaria",
         "country_name": "Đức",
-		"place_description": "Là thủ phủ của bang Bavaria và là một trong những thành phố lớn nhất của Đức, Munich sở hữu phần lớn sự nổi tiếng như một điểm đến du lịch nhờ vị trí của nó ở rìa bên ngoài của dãy Alps Bavarian xinh đẹp. Mặc dù không phải là một trong những thành phố lâu đời nhất của Đức - nguồn gốc của nó có thể bắt nguồn từ khu định cư của các nhà sư trước khi thành lập chính thức vào năm 1158 - Munich đã đóng một vai trò quan trọng trong việc định hình văn hóa và chính trị của đất nước.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/bavaria/munich/"
+        "img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/bavaria/munich/",
+        "place_description": "Munich là một thành phố rực rỡ che phủ đi vẻ lạnh lùng và nghiêm khắc của những tòa nhà rất phổ biến ở những nơi khác trên nước Đức. Chắc chắn, nó có một vài tòa nhà như vậy, nhưng trong thành phố cổ, du khách sẽ tìm thấy những tòa nhà lịch sử và di tích hấp dẫn. Munich có hệ thống giao thông công cộng tốt (xe buýt và tàu điện ngầm) rất thuận tiện cho việc di chuyển trong thành phố."
       },
       "geometry": {
         "coordinates": [
-          11.575382,
-          48.137108
+          11.575391,
+          48.137267
         ],
         "type": "Point"
       },
-      "id": 14
+      "id": "8"
     },
     {
       "type": "Feature",
       "properties": {
-        "place_name": "Hanover",
-        "region_name": "Lower Saxony",
+        "place_name": "Hamburg",
+        "region_name": "Hamburg",
         "country_name": "Đức",
-		"place_description": "Thành phố lịch sử Hanover nằm trên Sông Leine và là thủ phủ của Vùng đất Lower Saxony. Là một trung tâm thương mại quan trọng với trường đại học và các học viện âm nhạc và kịch nghệ, đây chắc chắn là một thành phố đáng ghé thăm cho những ai đang tìm kiếm một trải nghiệm thành phố thú vị ở Đức.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/lower-saxony/hanover/"
+        "img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/north-germany/hamburg/",
+        "place_description": "Thường được những người dân tự hào gọi là \"cửa ngõ vào thế giới\", thành phố cảng đẹp trai của Hamburg trong nhiều thế kỷ đã chào đón các thương gia, thương nhân và thủy thủ đến với vô số khách sạn lớn, nhà hàng cao cấp, và vâng, những quán bar và nhà chứa sang trọng. ."
       },
       "geometry": {
         "coordinates": [
-          9.738553, 
-		  52.374478
+          9.988919,
+          53.543768
         ],
         "type": "Point"
       },
-      "id": 15
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "place_name": "Zugspitze",
-        "region_name": "Bavaria",
-        "country_name": "Đức",
-		"place_description": "Là một phần của dãy núi Wetterstein, khối núi Zugspitze nằm giữa biên giới giữa Đức và Áo và được bao quanh bởi các thung lũng dốc. Đỉnh phía đông, ở độ cao 2.962 mét, được tôn lên bởi một cây thánh giá mạ vàng và có thể đến được bằng Bayerische Zugspitzbahn, một tuyến đường sắt răng cưa hoặc bằng cáp treo.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/bavaria/zugspitze/"
-      },
-      "geometry": {
-        "coordinates": [
-          10.986010499999999, 
-		  47.4211885
-        ],
-        "type": "Point"
-      },
-      "id": 16
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "place_name": "Đảo Rugen",
-        "region_name": "Mecklenburg-Western Pomerania",
-        "country_name": "Đức",
-		"place_description": "Rügen là hòn đảo lớn nhất và đẹp nhất trong số các đảo Baltic của Đức. Tách khỏi phần còn lại của Đức bởi Strelasund, nó được liên kết với thị trấn Stralsund đất liền bằng một con đường đắp cao. Vẻ đẹp của hòn đảo bắt nguồn từ sự đa dạng của cảnh quan, bao gồm mọi thứ từ đất nông nghiệp bằng phẳng và những ngọn đồi phủ đầy rừng đến những bãi biển đầy cát trắng, đầm phá và bán đảo xinh đẹp.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/mecklenburg-western-pomerania/rugen-island/"
-      },
-      "geometry": {
-        "coordinates": [
-          13.625953, 
-		  54.519054
-        ],
-        "type": "Point"
-      },
-      "id": 17
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "place_name": "Hồ Constance",
-        "region_name": "Baden-Württemberg",
-        "country_name": "Đức",
-		"place_description": "Mainau, Đảo Hoa ngoạn mục trên Hồ Constance xinh đẹp, có diện tích 110 mẫu Anh và thu hút nhiều du khách đến với những công viên và khu vườn xinh đẹp, um tùm với thảm thực vật nhiệt đới và bán nhiệt đới. Tiếp cận hòn đảo bằng thuyền hoặc qua một cây cầu đi bộ nối nó với đất liền, vì vậy hãy nhớ dành thêm một chút thời gian di chuyển ngoài hai giờ trở lên cần thiết để khám phá cơ sở tuyệt đẹp này một cách chính xác. Bãi đậu xe công cộng rộng rãi có sẵn trên đất liền, một số có trạm sạc xe điện.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/baden-wurttemberg/lake-constance/"
-      },
-      "geometry": {
-        "coordinates": [
-          9.132375, 
-		  47.771015
-        ],
-        "type": "Point"
-      },
-      "id": 18
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "place_name": "Bremen",
-        "region_name": "Bremen",
-        "country_name": "Đức",
-		"place_description": "Chính thức được biết đến với danh hiệu khá cao cả là 'Thành phố đông lạnh tự do của Bremen' (Freie Hansestadt Bremen), Bremen nằm ở hạ lưu sông Weser của Đức. Cảng sôi động này không chỉ là thành phố thủ đô của Land of Bremen, mà nó còn là một trong những cảng biển và trung tâm thương mại đường biển lớn nhất trong cả nước.",
-		"img_link": "images/destination-image-thumbnail/Countries/europe/central-europe/germany/bremen/"
-      },
-      "geometry": {
-        "coordinates": [
-          8.807165, 
-		  53.07582
-        ],
-        "type": "Point"
-      },
-      "id": 19
+      "id": "9"
     }
   ],
   "type": "FeatureCollection"

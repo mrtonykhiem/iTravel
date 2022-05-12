@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>iTravel</title>
+	<link rel="icon" href="images/iTravel-icon.png">
 	<link rel="stylesheet" href="CSS/itravel-grid.css">
 	<link rel="stylesheet" href="CSS/bootstrap-grid.css">
 	<link rel="stylesheet" href="CSS/swiper-bundle.min.css">
@@ -15,15 +16,17 @@
 		<div class="container">
 			<div class="row itravel-header-content">
 				<div class="col-3">
-					<img src="images/itravel_logo.png" alt="">
+					<a href="index.html" style="display: block">
+						<img src="images/itravel_logo.png" alt="" style="display: block">
+					</a>
 				</div>
 				<div class="col-9">
 					<ul class="itravel-menu">
-						<li><a href="#">Điểm đến</a></li>
-						<li><a href="#">Tour</a></li>
+						<li><a href="about_us.html">Về iTravel</a></li>
+						<li><a href="destination_list.html">Điểm đến</a></li>
+						<li><a href="tour_list.html">Tour</a></li>
 						<li><a href="blog_list.html">Blog</a></li>
-						<li><a href="#">Trò chơi</a></li>
-						<li><a href="#">Liên hệ</a></li>
+						<li><a href="contact.html">Liên hệ</a></li>
 						<li><button class="menu-button"><i class="fa fa-search"></i></button></li>
 						<li><button class="menu-button"><i class="fa fa-user"></i></button></li>
 					</ul>
@@ -36,9 +39,9 @@
 			<div class="col-8">
 				<div class="big-featured">
 					<div class="big-featured-content">
-						<a href="#" class="content-category">KINH NGHIỆM</a>
-						<a href="#" class="content-category">INDONESIA</a>
-						<a href="#" class="content-title">“Bỏ túi ngay” kinh nghiệm du lịch Indonesia mới nhất dành cho bạn</a>
+						<a href="blog_list.html" class="content-category">KINH NGHIỆM</a>
+						<a href="blog_list.html" class="content-category">INDONESIA</a>
+						<a href="blog_1.html" class="content-title">“Bỏ túi ngay” kinh nghiệm du lịch Indonesia mới nhất dành cho bạn</a>
 						<p>Indonesia là một quốc đảo lớn nhất Đông Nam Á. Nổi tiếng với những cánh rừng xanh ngút ngàn , những bãi biển xinh đẹp hay Đảo thiên đường Bali tuyệt đẹp, Những ngôi đến linh thiêng có kiến trúc độc đáo.</p>
 					</div>
 				</div>
@@ -46,17 +49,17 @@
 			<div class="col-4">
 				<div class="small-featured small-num-1">
 					<div class="small-featured-content">
-						<a href="#" class="content-category">KHÁM PHÁ</a>
-						<a href="#" class="content-category">CUNG ĐƯỜNG</a>
-						<a href="#" class="content-category">NA UY</a>
-						<a href="#" class="content-title">Khám phá cung đường “nghẹt thở” Đại Tây Dương tại Na Uy</a>
+						<a href="blog_list.html" class="content-category">KHÁM PHÁ</a>
+						<a href="blog_list.html" class="content-category">CUNG ĐƯỜNG</a>
+						<a href="blog_list.html" class="content-category">NA UY</a>
+						<a href="blog_1.html" class="content-title">Khám phá cung đường “nghẹt thở” Đại Tây Dương tại Na Uy</a>
 					</div>
 				</div>
 				<div class="small-featured small-num-2">
 					<div class="small-featured-content">
-						<a href="#" class="content-category">KHÁM PHÁ</a>
-						<a href="#" class="content-category">BIỂN ĐẢO</a>
-						<a href="#" class="content-title">Những hòn đảo kỳ lạ nhất trên thế giới</a>
+						<a href="blog_list.html" class="content-category">KHÁM PHÁ</a>
+						<a href="blog_list.html" class="content-category">BIỂN ĐẢO</a>
+						<a href="blog_1.html" class="content-title">Những hòn đảo kỳ lạ nhất trên thế giới</a>
 					</div>
 				</div>
 			</div>
@@ -69,23 +72,413 @@
 			<ul class="destination-buttons" id="dest-buttons">
 				<li><button class="destination-class active" id="cities-dest">Thành phố</button></li>
 				<li><button class="destination-class" id="countries-dest">Quốc gia</button></li>
-				<li><button class="destination-class" id="attraction-dest">Địa điểm</button></li>
+				<li><button class="destination-class" id="attraction-dest">Vùng miền</button></li>
 			</ul>
 		</div>
 	</div>
 	
-	<div class="container" id="destination-grid">
+	<div class="container mt-3" id="destination-grid">
 		<div class="row dest-content active" id="city-row">
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/europe/central-europe/germany/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Trung Âu</h2>
+							<h3>Đức</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/europe/western-europe/france/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Tây Âu</h2>
+							<h3>Pháp</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/europe/western-europe/netherlands/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Tây Âu</h2>
+							<h3>Hà Lan</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/europe/southern-europe/italy/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Nam Âu</h2>
+							<h3>Italy</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/asia/east-asia/japan/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Đông Á</h2>
+							<h3>Nhật Bản</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/asia/east-asia/skorea/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Đông Á</h2>
+							<h3>Hàn Quốc</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/asia/southeast-asia/vietnam/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Đông Nam Á</h2>
+							<h3>Việt Nam</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/africa-arab/northern-africa/egypt/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Bắc Phi</h2>
+							<h3>Ai Cập</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/america/north-america/usa/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Bắc Mỹ</h2>
+							<h3>Hoa Kỳ</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/america/north-america/canada/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Bắc Mỹ</h2>
+							<h3>Canada</h3>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
 		<div class="row dest-content" id="country-row">
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/europe/central-europe/germany/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Trung Âu</h2>
+							<h3>Đức</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/europe/western-europe/france/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Tây Âu</h2>
+							<h3>Pháp</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/europe/western-europe/netherlands/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Tây Âu</h2>
+							<h3>Hà Lan</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/europe/southern-europe/italy/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Nam Âu</h2>
+							<h3>Italy</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/asia/east-asia/japan/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Đông Á</h2>
+							<h3>Nhật Bản</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/asia/east-asia/skorea/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Đông Á</h2>
+							<h3>Hàn Quốc</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/asia/southeast-asia/vietnam/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Đông Nam Á</h2>
+							<h3>Việt Nam</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/africa-arab/northern-africa/egypt/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Bắc Phi</h2>
+							<h3>Ai Cập</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/america/north-america/usa/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Bắc Mỹ</h2>
+							<h3>Hoa Kỳ</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/america/north-america/canada/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Bắc Mỹ</h2>
+							<h3>Canada</h3>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
 		<div class="row dest-content" id="attraction-row">
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/europe/central-europe/germany/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Trung Âu</h2>
+							<h3>Đức</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/europe/western-europe/france/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Tây Âu</h2>
+							<h3>Pháp</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/europe/western-europe/netherlands/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Tây Âu</h2>
+							<h3>Hà Lan</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/europe/southern-europe/italy/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Nam Âu</h2>
+							<h3>Italy</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/asia/east-asia/japan/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Đông Á</h2>
+							<h3>Nhật Bản</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/asia/east-asia/skorea/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Đông Á</h2>
+							<h3>Hàn Quốc</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/asia/southeast-asia/vietnam/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Đông Nam Á</h2>
+							<h3>Việt Nam</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/africa-arab/northern-africa/egypt/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Bắc Phi</h2>
+							<h3>Ai Cập</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/america/north-america/usa/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Bắc Mỹ</h2>
+							<h3>Hoa Kỳ</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-2plus">
+				<div class="destination-item-thumbnail">
+					<a href="germany.html" style="display: block; text-decoration: none">
+						<div style="overflow: hidden; width: 100%">
+							<img src="images/destination-image-thumbnail/Countries/america/north-america/canada/featured-thumbnail.png" alt="">
+						</div>
+						<div class="destination-label">
+							<h2>Bắc Mỹ</h2>
+							<h3>Canada</h3>
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 	
 	<div class="container">
 		<div class="destination-all">
-			<a href="#" class="see-all-button">XEM TẤT CẢ</a>
+			<a href="destination_list.html" class="see-all-button">XEM TẤT CẢ</a>
 		</div>
 	</div>
 	
@@ -106,10 +499,10 @@
 				
 			</div>
 		 </div>
-		  <div class="swiper-button-next"></div>
-      		<div class="swiper-button-prev"></div>
+		  <div class="swiper-button-next"><i class="fa fa-chevron-right"></i></div>
+      		<div class="swiper-button-prev"><i class="fa fa-chevron-left"></i></div>
 		<div class="destination-all mt-3">
-			<a href="#" class="see-all-button">XEM TẤT CẢ</a>
+			<a href="tour_list.html" class="see-all-button">XEM TẤT CẢ</a>
 		</div>
 	  </div>
 	
@@ -143,21 +536,21 @@
 						<div class="col-12">
 							<img src="images/itravel_logo.png" alt="">
 						</div>
-						<h5>SUBSCRIBE US</h5>
+						<h5>NHẬN TIN</h5>
 						<div class="col-9 footer-subscribe">
 							<input type="text" placeholder="Enter your email">
 						</div>
 						<div class="col-3 footer-button">
-							<button class="footer-button-subscribe">SUBSCRIBE</button>
+							<button class="footer-button-subscribe">ĐĂNG KÝ</button>
 						</div>
-						<h5>FOLLOW US</h5>
+						<h5>MẠNG XÃ HỘI</h5>
 						<ul class="iTravel-social-media">
 							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
 						</ul>
-						<h5>CONTACT US</h5>
+						<h5>LIÊN HỆ</h5>
 						<div class="contact-footer">
 							<div class="contact-info row">
 								<div class="col-1 contact-icon">
@@ -183,61 +576,52 @@
 						<div class="col-4 footer-list">
 							<h5>THÀNH PHỐ</h5>
 							<ul>
-								<li><a href="#">Venice</a></li>
-								<li><a href="#">Tokyo</a></li>
-								<li><a href="#">Los Angeles</a></li>
-								<li><a href="#">Bangkok</a></li>
-								<li><a href="#">Rio de Janeiro</a></li>
-								<li><a href="#">Casablanca</a></li>
+								<li><a href="germany.html">Venice</a></li>
+								<li><a href="germany.html">Tokyo</a></li>
+								<li><a href="germany.html">Los Angeles</a></li>
+								<li><a href="germany.html">Bangkok</a></li>
+								<li><a href="germany.html">Rio de Janeiro</a></li>
+								<li><a href="germany.html">Casablanca</a></li>
 							</ul>
 						</div>
 						<div class="col-4 footer-list">
 							<h5>TOURS</h5>
 							<ul>
-								<li><a href="#">Du lịch lịch sử, văn hoá</a></li>
-								<li><a href="#">Du lịch sinh thái</a></li>
-								<li><a href="#">Du lịch hành hương</a></li>
-								<li><a href="#">Du lịch khám phá</a></li>
-								<li><a href="#">Du lịch nghỉ dưỡng</a></li>
-								<li><a href="#">Du lịch thế thao</a></li>
-							</ul>
-						</div>
-						<div class="col-4 footer-list">
-							<h5>TRÒ CHƠI</h5>
-							<ul>
-								<li><a href="#">Đoán chữ</a></li>
-								<li><a href="#">Cặp bài trùng</a></li>
-								<li><a href="#">Câu hỏi</a></li>
-								<li><a href="#">Tìm từ</a></li>
+								<li><a href="tour_list.html">Du lịch lịch sử, văn hoá</a></li>
+								<li><a href="tour_list.html">Du lịch sinh thái</a></li>
+								<li><a href="tour_list.html">Du lịch hành hương</a></li>
+								<li><a href="tour_list.html">Du lịch khám phá</a></li>
+								<li><a href="tour_list.html">Du lịch nghỉ dưỡng</a></li>
+								<li><a href="tour_list.html">Du lịch thế thao</a></li>
 							</ul>
 						</div>
 						<div class="col-4 footer-list">
 							<h5>QUỐC GIA</h5>
 							<ul>
-								<li><a href="#">Pháp</a></li>
-								<li><a href="#">Nhật Bản</a></li>
-								<li><a href="#">Ai Cập</a></li>
-								<li><a href="#">Hoa Kỳ</a></li>
-								<li><a href="#">Đức</a></li>
-								<li><a href="#">Úc</a></li>
+								<li><a href="germany.html">Pháp</a></li>
+								<li><a href="germany.html">Nhật Bản</a></li>
+								<li><a href="germany.html">Ai Cập</a></li>
+								<li><a href="germany.html">Hoa Kỳ</a></li>
+								<li><a href="germany.html">Đức</a></li>
+								<li><a href="germany.html">Úc</a></li>
 							</ul>
 						</div>
 						<div class="col-4 footer-list">
 							<h5>BLOG</h5>
 							<ul>
-								<li><a href="#">Khám phá</a></li>
-								<li><a href="#">Kinh nghiệm</a></li>
-								<li><a href="#">Tin tức</a></li>
-								<li><a href="#">Hành trình</a></li>
+								<li><a href="blog_list.html">Khám phá</a></li>
+								<li><a href="blog_list.html">Kinh nghiệm</a></li>
+								<li><a href="blog_list.html">Tin tức</a></li>
+								<li><a href="blog_list.html">Hành trình</a></li>
 							</ul>
 						</div>
 						<div class="col-4 footer-list">
 							<h5>LIÊN HỆ</h5>
 							<ul>
-								<li><a href="#">Về chúng tôi</a></li>
-								<li><a href="#">Liên hệ</a></li>
-								<li><a href="#">Chính sách bảo mật</a></li>
-								<li><a href="#">Cơ hội việc làm</a></li>
+								<li><a href="about_us.html">Về chúng tôi</a></li>
+								<li><a href="contact.html">Liên hệ</a></li>
+								<li><a href="about_us.html">Chính sách bảo mật</a></li>
+								<li><a href="about_us.html">Cơ hội việc làm</a></li>
 							</ul>
 						</div>
 					</div>
@@ -247,108 +631,7 @@
 	</div>
 	
 	<script src="JS/destination-city.js"></script>
-	<script src="JS/itravel-script.js"></script>
 	<script src="JS/swiper-bundle.min.js"></script>
-	<script>
-		
-		const explore_category = [
-			{'explore_icon': 'icon-masks', 'explore_name': 'VĂN HOÁ'},
-			{'explore_icon': 'icon-cutlery', 'explore_name': 'ẨM THỰC'},
-			{'explore_icon': 'icon-landscape', 'explore_name': 'THIÊN NHIÊN'},
-			{'explore_icon': 'icon-landmark', 'explore_name': 'DANH LAM'},
-			{'explore_icon': 'icon-road', 'explore_name': 'CUNG ĐƯỜNG'},
-			{'explore_icon': 'icon-island', 'explore_name': 'BIỂN ĐẢO'},
-			{'explore_icon': 'icon-hotel', 'explore_name': 'NGHỈ DƯỠNG'}
-		];
-		
-		const tour_category = [
-			{'explore_icon': 'icon-castle', 'explore_name': 'DU LỊCH VĂN HOÁ , LỊCH SỬ'},
-			{'explore_icon': 'icon-wildlife', 'explore_name': 'DU LICH SINH THÁI'},
-			{'explore_icon': 'icon-pray', 'explore_name': 'DU LỊCH HÀNH HƯƠNG'},
-			{'explore_icon': 'icon-hiking', 'explore_name': 'DU LỊCH KHÁM PHÁ'},
-			{'explore_icon': 'icon-resort', 'explore_name': 'DU LỊCH NGHỈ DƯỠNG'},
-			{'explore_icon': 'icon-sports', 'explore_name': 'DU LỊCH THỂ THAO'}
-		];
-		
-		const explore_innerHTML = document.getElementById('discover-list');
-		explore_innerHTML.innerHTML = showExploreCategory();
-		
-		const tour_innerHTML = document.getElementById('travel-list');
-		tour_innerHTML.innerHTML = showTourCategory();
-		
-		function showExploreCategory() {
-			var explore_innerHTML = '';
-			for (var i=0; i<explore_category.length; i++) {
-				explore_innerHTML = explore_innerHTML + '<div class="col-1plus"><a href="blog_list.html" class="travel-type discover-category"><i class="' + explore_category[i].explore_icon +'"></i><h6>' + explore_category[i].explore_name +'</h6></a></div>';
-			}
-			return explore_innerHTML;
-		}
-		
-		function showTourCategory() {
-			var tour_innerHTML = '';
-			for (var i=0; i<tour_category.length; i++) {
-				tour_innerHTML = tour_innerHTML + '<div class="col-2"><a href="#" class="travel-type"><i class="' + tour_category[i].explore_icon +'"></i><h6>' + tour_category[i].explore_name +'</h6></a></div>';
-			}
-			return tour_innerHTML;
-		}
-		
-		const blog_innerHTML = document.getElementById('main-page-news');
-		const showFeaturedBlog = 5;
-		showMainBlog();
-		
-		function showMainBlog() {
-			var big_featured = createMainBlogItems(blog_list[0].blog_image_link, blog_list[0].blog_title, blog_list[0].summary, blog_list[0].date, createMainBlogTags(blog_list[0].blog_tags), blog_list[0].author);
-			
-			var small_featured = document.createElement('div');
-			small_featured.classList.add('small-featured-blog', 'col-6');
-			
-			var small_featured_content = document.createElement('div');
-			small_featured_content.classList.add('row');
-			
-			for (var i=1; i<showFeaturedBlog; i++) {
-				small_featured_content.innerHTML = small_featured_content.innerHTML + '<div class="col-6"><div class="small-blog"><a href="blog_1.html"><img src="' + blog_list[i].blog_image_link + 'small.png" alt=""><div class="small-blog-content"><a href="#" class="blog-category">' + blog_list[i].blog_tags[0] + '</a><a href="#" class="big-blog-title">' + blog_list[i].blog_title + '</a><div class="blog-information"><div><i class="fa fa-calendar"></i><p>' + blog_list[i].date.getDate() + '/' + blog_list[i].date.getMonth() +'/' + blog_list[i].date.getFullYear() + '</p></div><div><i class="fa fa-user"></i><p>' + blog_list[i].author + '</p></div></div></div></a></div></div>';
-			}
-			
-			small_featured.append(small_featured_content);
-			
-			blog_innerHTML.append(big_featured, small_featured);
-		}
-		
-		function createMainBlogTags(blog_tags) {
-			var blog_tags_inner = '';
-			for (var i=0; i<blog_tags.length; i++) {
-				blog_tags_inner = blog_tags_inner + '<a href="#" class="blog-category">' + blog_tags[i] + '</a>';
-			}
-			return blog_tags_inner;
-		}
-		
-		function createMainBlogItems(blog_image_link, blog_title, blog_summary, blog_date, blog_tags, blog_author) {
-			var blog_item = document.createElement('div');
-			blog_item.classList.add('big-featured-blog', 'col-6');
-			blog_item.innerHTML = '<div class="img-blog-block"><a href="blog_1.html"><img style="display: block; width: 100%" src="' + blog_image_link + 'big.png" alt=""></a></div>' + blog_tags + '<a class="big-blog-title" href="#">' + blog_title + '</a><div class="blog-information"><div><i class="fa fa-calendar"></i><p>' + blog_date.getDate() + '/' + blog_date.getMonth() +'/' + blog_date.getFullYear() + '</p></div><div><i class="fa fa-user"></i><p>' + blog_author + '</p></div></div><p>' + blog_summary +'</p>';
-			return blog_item;
-		}
-		
-		const tour_list_content = document.getElementById('tour-list-content');
-		var tour_item_innerHTML = '';
-		for (var i=0; i<6; i++) {
-			var tour_item_innerHTML = tour_item_innerHTML + showTourItems(tour_list[i].tour_image, tour_list[i].tour_name, tour_list[i].tour_summary, tour_list[i].tour_time, tour_list[i].tour_depart, tour_list[i].tour_sale);
-		}
-		tour_list_content.innerHTML = tour_item_innerHTML;
-		
-		function showTourItems(tour_image, tour_name, tour_summary, tour_time, tour_depart, tour_price) {
-			return '<div class="swiper-slide"><div class="tour-content"><div class="tour-image"><a href="#" class="tour-thumbnail"><img src="' + tour_image +'thumbnail.png" alt="" style="width: 100%"></a></div><div class="tour-info"><h6>' + tour_summary +'</h6><a href="#">' + tour_name +'</a></div><div class="tour-break-line"></div><div class="tour-time-depart"><div class="tour-detail"><i class="fa fa-calendar"></i><p><span>Thời gian: </span>' + tour_time + '</p></div><div class="tour-detail"><i class="fa fa-flag"></i><p><span>Xuất phát: </span>' + tour_depart + '</p></div></div><div class="tour-break-line"></div><div class="tour-review-price"><a href="#">Xem chi tiết</a><h4><span>từ </span>' + new Intl.NumberFormat().format(tour_price) +' đ</h4></div></div></div>';
-		}
-		
-		var swiper2 = new Swiper(".my-slider", {
-        slidesPerView: 4,
-        slidesPerGroup: 1,
-        loop: true,
-        navigation: {
-          nextEl: "#this-slider-2 .swiper-button-next",
-          prevEl: "#this-slider-2 .swiper-button-prev",
-        },
-      });
-	</script>
+	<script src="JS/itravel-script.js"></script>
 </body>
 </html>

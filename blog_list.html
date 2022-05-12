@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>blog_list</title>
+<title>Danh sách blog</title>
+	<link rel="icon" href="images/iTravel-icon.png">
 	<link rel="stylesheet" href="CSS/itravel-grid.css">
 	<link rel="stylesheet" href="CSS/bootstrap-grid.css">
 	<link rel="stylesheet" href="CSS/swiper-bundle.min.css">
@@ -15,15 +16,17 @@
 		<div class="container">
 			<div class="row itravel-header-content">
 				<div class="col-3">
-					<img src="images/itravel_logo.png" alt="">
+					<a href="index.html" style="display: block">
+						<img src="images/itravel_logo.png" alt="" style="display: block">
+					</a>
 				</div>
 				<div class="col-9">
 					<ul class="itravel-menu">
-						<li><a href="#">Điểm đến</a></li>
-						<li><a href="#">Tour</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Trò chơi</a></li>
-						<li><a href="#">Liên hệ</a></li>
+						<li><a href="about_us.html">Về iTravel</a></li>
+						<li><a href="destination_list.html">Điểm đến</a></li>
+						<li><a href="tour_list.html">Tour</a></li>
+						<li><a href="blog_list.html">Blog</a></li>
+						<li><a href="contact.html">Liên hệ</a></li>
 						<li><button class="menu-button"><i class="fa fa-search"></i></button></li>
 						<li><button class="menu-button"><i class="fa fa-user"></i></button></li>
 					</ul>
@@ -33,87 +36,59 @@
 	</div>
 	<div class="container-fluid blue-itravel-subpage">
 		<div class="container subpage-url">
-			<a href="#">Home</a>
+			<a href="index.html">Home</a>
 			<i class="fa fa-chevron-right"></i>
 			<a href="#">Blog</a>
 		</div>
 	</div>
 	<div class="container-fluid news-background">
 		<h1>BLOG</h1>
-		<p>Khám phá những vùng đất bí ẩn, trải nghiệm các tập tục, văn hoá từng nơi, tổng hợp những kinh nghiệm cũng như bí quyết du lịch</p>
 	</div>
 	<div class="container mb-5">
 		<div class="row">
 			<div class="col-8" >
-				<div class="blog-control row">
-					<div class="col-6">
-						<div class="row blog-search">
-							<div class="col-11"><input type="search" placeholder="Tìm blog" class="blog-input"></div>
-							<div class="col-1 g-0"><button class="blog-submit"><i class="fa fa-search"></i></button></div>
-						</div>
-					</div>
-					<div class="col-3">
-						<div class="blog-type">
-							<button class="blog-select">
-							Tất cả</button>
-							<div class="blog-select-popup">
+				<div class="blog-control" style="display: flex; justify-content: space-between">
+					<span id="blog-num-total">12 bài blog</span>
+					<div class="blog-sort" style="display: flex; justify-content: space-between">
+						<span>Sắp xếp theo: </span>
+						<div style="position: relative">
+							<button class="blog-select" id="blog-sort-button">Thời gian</button>
+							<div class="blog-select-popup" id="blog-sort-options">
 								<ul>
-									<li><button class="select-popup">Tất cả</button></li>
-									<li><button class="select-popup">Khám phá</button></li>
-									<li><button class="select-popup">Kinh nghiệm</button></li>
-									<li><button class="select-popup">Tin tức</button></li>
+									<li><button id="time-sort" onClick="sortBlogList('Thời gian')">Thời gian</button></li>
+									<li><button id="favorite-sort" onClick="sortBlogList('Yêu thích nhất')">Yêu thích nhất</button></li>
+									<li><button id="most-read-sort" onClick="sortBlogList('Đọc nhiều nhất')">Đọc nhiều nhất</button></li>
 								</ul>
 							</div>
 						</div>
 					</div>
-					<div class="col-3">
-						<button class="filter-button">
-						<i class="fa fa-filter"></i>Filter</button>
-					</div>
 				</div>
-				<div id="create-this" class="mt-5"></div>
-				<div class="destination-all">
-			<button class="see-more-button">XEM THÊM</button>
-		</div>
+				<div id="create-this" class="mt-4"></div>
+				<div class="destination-all" id="more-blog">
+					<p id="blog-show-num">10 trong 19 blog hiển thị</p>
+					<div class="mb-3" id="blog-show-bar">
+						<div id="blog-show-progress"></div>
+					</div>
+					<button class="see-more-button active" id="more-blog-button">XEM THÊM</button>
+				</div>
 			</div>
 			<div class="col-4" style="position-relative">
 				<div class="blog-small-filter">
+					<h3>CHỦ ĐỀ BLOG</h3>
+					<div class="explore-category-small-tag">
+						<button class="explore-tags" style="font-size: 17px">KHÁM PHÁ</button>
+						<button class="explore-tags" style="font-size: 17px">KINH NGHIỆM</button>
+						<button class="explore-tags" style="font-size: 17px">TIN TỨC</button>
+					</div>
 					<h3>KHÁM PHÁ</h3>
 					<div class="explore-category-small-tag">
 						<button class="explore-tags">THIÊN NHIÊN</button>
-						<button class="explore-tags">LÂU ĐÀI</button>
-						<button class="explore-tags">ĐỀN CHÙA</button>
-						<button class="explore-tags">SUỐI NƯỚC</button>
-						<button class="explore-tags">NHÀ THỜ</button>
-						<button class="explore-tags">DI TÍCH</button>
-						<button class="explore-tags">KHU VUI CHƠI</button>
-						<button class="explore-tags">CUNG ĐƯỜNG</button>
+						<button class="explore-tags">DANH LAM</button>
 						<button class="explore-tags">BIỂN ĐẢO</button>
-						<button class="explore-tags">RỪNG NÚI</button>
+						<button class="explore-tags">VĂN HOÁ</button>
 						<button class="explore-tags">LỄ HỘI</button>
-						<button class="explore-tags">TRANG PHỤC</button>
 						<button class="explore-tags">ẨM THỰC</button>
 						<button class="explore-tags">NGHỈ DƯỠNG</button>
-					</div>
-					<h3>QUỐC GIA</h3>
-					<div class="explore-category-small-tag">
-						<button class="explore-tags">PHÁP</button>
-						<button class="explore-tags">ITALY</button>
-						<button class="explore-tags">ĐỨC</button>
-						<button class="explore-tags">TÂY BAN NHA</button>
-						<button class="explore-tags">ANH QUỐC</button>
-						<button class="explore-tags">THUỴ SĨ</button>
-						<button class="explore-tags">HÀ LAN</button>
-						<button class="explore-tags">NHẬT BẢN</button>
-						<button class="explore-tags">HÀN QUỐC</button>
-						<button class="explore-tags">TRUNG HOA</button>
-						<button class="explore-tags">VIỆT NAM</button>
-						<button class="explore-tags">THÁI LAN</button>
-						<button class="explore-tags">ÚC</button>
-						<button class="explore-tags">HOA KỲ</button>
-						<button class="explore-tags">CANADA</button>
-						<button class="explore-tags">BRAZIL</button>
-						<button class="explore-tags">AI CẬP</button>
 					</div>
 					<h3>KINH NGHIỆM</h3>
 					<div class="explore-category-small-tag">
@@ -131,6 +106,9 @@
 						<button class="explore-tags">KHUYẾN MÃI</button>
 						<button class="explore-tags">SỰ KIỆN</button>
 					</div>
+					<div style="display: flex; justify-content: center">
+						<button class="more-filter-hashtag" id="extended-blog-tags-button"><i class="fa fa-filter" style="margin-right: 5px"></i>Mở rộng</button>
+					</div>
 				</div>	
 			</div>
 		</div>
@@ -144,21 +122,21 @@
 						<div class="col-12">
 							<img src="images/itravel_logo.png" alt="">
 						</div>
-						<h5>SUBSCRIBE US</h5>
+						<h5>NHẬN TIN</h5>
 						<div class="col-9 footer-subscribe">
 							<input type="text" placeholder="Enter your email">
 						</div>
 						<div class="col-3 footer-button">
-							<button class="footer-button-subscribe">SUBSCRIBE</button>
+							<button class="footer-button-subscribe">ĐĂNG KÝ</button>
 						</div>
-						<h5>FOLLOW US</h5>
+						<h5>MẠNG XÃ HỘI</h5>
 						<ul class="iTravel-social-media">
 							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
 						</ul>
-						<h5>CONTACT US</h5>
+						<h5>LIÊN HỆ</h5>
 						<div class="contact-footer">
 							<div class="contact-info row">
 								<div class="col-1 contact-icon">
@@ -184,61 +162,52 @@
 						<div class="col-4 footer-list">
 							<h5>THÀNH PHỐ</h5>
 							<ul>
-								<li><a href="#">Venice</a></li>
-								<li><a href="#">Tokyo</a></li>
-								<li><a href="#">Los Angeles</a></li>
-								<li><a href="#">Bangkok</a></li>
-								<li><a href="#">Rio de Janeiro</a></li>
-								<li><a href="#">Casablanca</a></li>
+								<li><a href="germany.html">Venice</a></li>
+								<li><a href="germany.html">Tokyo</a></li>
+								<li><a href="germany.html">Los Angeles</a></li>
+								<li><a href="germany.html">Bangkok</a></li>
+								<li><a href="germany.html">Rio de Janeiro</a></li>
+								<li><a href="germany.html">Casablanca</a></li>
 							</ul>
 						</div>
 						<div class="col-4 footer-list">
 							<h5>TOURS</h5>
 							<ul>
-								<li><a href="#">Du lịch lịch sử, văn hoá</a></li>
-								<li><a href="#">Du lịch sinh thái</a></li>
-								<li><a href="#">Du lịch hành hương</a></li>
-								<li><a href="#">Du lịch khám phá</a></li>
-								<li><a href="#">Du lịch nghỉ dưỡng</a></li>
-								<li><a href="#">Du lịch thế thao</a></li>
-							</ul>
-						</div>
-						<div class="col-4 footer-list">
-							<h5>TRÒ CHƠI</h5>
-							<ul>
-								<li><a href="#">Đoán chữ</a></li>
-								<li><a href="#">Cặp bài trùng</a></li>
-								<li><a href="#">Câu hỏi</a></li>
-								<li><a href="#">Tìm từ</a></li>
+								<li><a href="tour_list.html">Du lịch lịch sử, văn hoá</a></li>
+								<li><a href="tour_list.html">Du lịch sinh thái</a></li>
+								<li><a href="tour_list.html">Du lịch hành hương</a></li>
+								<li><a href="tour_list.html">Du lịch khám phá</a></li>
+								<li><a href="tour_list.html">Du lịch nghỉ dưỡng</a></li>
+								<li><a href="tour_list.html">Du lịch thế thao</a></li>
 							</ul>
 						</div>
 						<div class="col-4 footer-list">
 							<h5>QUỐC GIA</h5>
 							<ul>
-								<li><a href="#">Pháp</a></li>
-								<li><a href="#">Nhật Bản</a></li>
-								<li><a href="#">Ai Cập</a></li>
-								<li><a href="#">Hoa Kỳ</a></li>
-								<li><a href="#">Đức</a></li>
-								<li><a href="#">Úc</a></li>
+								<li><a href="germany.html">Pháp</a></li>
+								<li><a href="germany.html">Nhật Bản</a></li>
+								<li><a href="germany.html">Ai Cập</a></li>
+								<li><a href="germany.html">Hoa Kỳ</a></li>
+								<li><a href="germany.html">Đức</a></li>
+								<li><a href="germany.html">Úc</a></li>
 							</ul>
 						</div>
 						<div class="col-4 footer-list">
 							<h5>BLOG</h5>
 							<ul>
-								<li><a href="#">Khám phá</a></li>
-								<li><a href="#">Kinh nghiệm</a></li>
-								<li><a href="#">Tin tức</a></li>
-								<li><a href="#">Hành trình</a></li>
+								<li><a href="blog_list.html">Khám phá</a></li>
+								<li><a href="blog_list.html">Kinh nghiệm</a></li>
+								<li><a href="blog_list.html">Tin tức</a></li>
+								<li><a href="blog_list.html">Hành trình</a></li>
 							</ul>
 						</div>
 						<div class="col-4 footer-list">
 							<h5>LIÊN HỆ</h5>
 							<ul>
-								<li><a href="#">Về chúng tôi</a></li>
-								<li><a href="#">Liên hệ</a></li>
-								<li><a href="#">Chính sách bảo mật</a></li>
-								<li><a href="#">Cơ hội việc làm</a></li>
+								<li><a href="about_us.html">Về chúng tôi</a></li>
+								<li><a href="contact.html">Liên hệ</a></li>
+								<li><a href="about_us.html">Chính sách bảo mật</a></li>
+								<li><a href="about_us.html">Cơ hội việc làm</a></li>
 							</ul>
 						</div>
 					</div>
@@ -247,46 +216,80 @@
 		</div>
 	</div>
 	
+	<div class="container-fluid" id="extended-blogs-tag">
+		<div class="more-filter-modal" style="height: 620px; width: 750px; background-color: #fff; border-radius: 20px; box-sizing: border-box; padding: 30px; position: relative">
+			<h3 class="more-filter-label" style="text-align: center">KHÁM PHÁ</h3>
+			<div class="explore-category-small-tag">
+				<button class="explore-tags">LÂU ĐÀI</button>
+				<button class="explore-tags">ĐỀN CHÙA</button>
+				<button class="explore-tags">NÚI ĐỒI</button>
+				<button class="explore-tags">THÁC NƯỚC</button>
+				<button class="explore-tags">SÔNG SUỐI</button>
+				<button class="explore-tags">BÃI BIỂN</button>
+				<button class="explore-tags">KHU RỪNG</button>
+				<button class="explore-tags">VƯỜN QUỐC GIA</button>
+				<button class="explore-tags">HÒN ĐẢO</button>
+				<button class="explore-tags">CUNG ĐƯỜNG</button>
+				<button class="explore-tags">DI TÍCH</button>
+				<button class="explore-tags">TRANG PHỤC</button>
+				<button class="explore-tags">MÓN ĂN</button>
+				<button class="explore-tags">ĐỒ UỐNG</button>
+				<button class="explore-tags">KHÁCH SẠN</button>
+				<button class="explore-tags">RESORT</button>
+				<button class="explore-tags">BẢO TÀNG</button>
+				<button class="explore-tags">KHU VUI CHƠI</button>
+				<button class="explore-tags">KHU THỂ THAO</button>
+			</div>
+			<h3 class="more-filter-label" style="text-align: center">QUỐC GIA</h3>
+			<div class="explore-category-small-tag">
+				<button class="explore-tags" style="font-size: 20px">CHÂU ÂU</button>
+				<button class="explore-tags" style="font-size: 20px">CHÂU MỸ</button>
+				<button class="explore-tags" style="font-size: 20px">CHÂU Á</button>
+				<button class="explore-tags" style="font-size: 20px">CHÂU PHI</button>
+				<button class="explore-tags" style="font-size: 18px">ĐÔNG NAM Á</button>
+				<button class="explore-tags" style="font-size: 18px">TRUNG ĐÔNG</button>
+				<button class="explore-tags" style="font-size: 18px">ĐÔNG ÂU</button>
+				<button class="explore-tags" style="font-size: 18px">NAM MỸ</button>
+				<button class="explore-tags" style="font-size: 15px">TÂY BAN NHA</button>
+				<button class="explore-tags" style="font-size: 15px">BỒ ĐÀO NHÀ</button>
+				<button class="explore-tags" style="font-size: 15px">ANH QUỐC</button>
+				<button class="explore-tags" style="font-size: 15px">PHÁP</button>
+				<button class="explore-tags" style="font-size: 15px">ITALY</button>
+				<button class="explore-tags" style="font-size: 15px">ĐỨC</button>
+				<button class="explore-tags" style="font-size: 15px">THUỴ SĨ</button>
+				<button class="explore-tags" style="font-size: 15px">THỔ NHĨ KỲ</button>
+				<button class="explore-tags" style="font-size: 15px">NHẬT BẢN</button>
+				<button class="explore-tags" style="font-size: 15px">HÀN QUỐC</button>
+				<button class="explore-tags" style="font-size: 15px">TRUNG QUỐC</button>
+				<button class="explore-tags" style="font-size: 15px">VIỆT NAM</button>
+				<button class="explore-tags" style="font-size: 15px">THÁI LAN</button>
+				<button class="explore-tags" style="font-size: 15px">INDONESIA</button>
+				<button class="explore-tags" style="font-size: 15px">HOA KỲ</button>
+				<button class="explore-tags" style="font-size: 15px">MEXICO</button>
+				<button class="explore-tags" style="font-size: 15px">ẤN ĐỘ</button>
+				<button class="explore-tags">HÀ LAN</button>
+				<button class="explore-tags">BỈ</button>
+				<button class="explore-tags">SCANDINAVIA</button>
+				<button class="explore-tags">NGA</button>
+				<button class="explore-tags">UAE</button>
+				<button class="explore-tags">Ả RẬP XÊ-ÚT</button>
+				<button class="explore-tags">CANADA</button>
+				<button class="explore-tags">BRAZIL</button>
+				<button class="explore-tags">ARGENTINA</button>
+				<button class="explore-tags">AI CẬP</button>
+				<button class="explore-tags">NAM PHI</button>
+				<button class="explore-tags">MA RỐC</button>
+			</div>
+			<div style="display: flex; justify-content: center; align-items: center">
+				<button class="more-filter-hashtag" id="reset-filter">RESET</button>
+			</div>
+			<button id="close-extended-tag"><i class="fa fa-close"></i></button>
+		</div>
+	</div>
+	
 	<script src="JS/destination-city.js"></script>
 <!--	<script src="JS/itravel-script.js"></script>-->
 	<script src="JS/swiper-bundle.min.js"></script>
-	<script>
-		const blog_innerHTML = document.getElementById('create-this');
-		var blog_show = 10;
-		showBlog();
-		
-		function showBlog() {
-			for (var i=0; i<blog_show; i++) {
-				blog_innerHTML.append(createBlogItems(blog_list[i].blog_image_link, blog_list[i].blog_title, blog_list[i].summary, blog_list[i].date, createBlogTags(blog_list[i].blog_tags), blog_list[i].author));
-			}
-		}
-		
-		function createBlogTags(blog_tags) {
-			var blog_tags_inner = '';
-			for (var i=0; i<blog_tags.length; i++) {
-				blog_tags_inner = blog_tags_inner + '<a href="#" class="blog-category">' + blog_tags[i] + '</a>';
-			}
-			return blog_tags_inner;
-		}
-		
-		function createBlogItems(blog_image_link, blog_title, blog_summary, blog_date, blog_tags, blog_author) {
-			var blog_item = document.createElement('div');
-			blog_item.classList.add('blog-list', 'row');
-			
-			var blog_image = document.createElement('div');
-			blog_image.classList.add('col-4');
-			blog_image.innerHTML = '<div href="#" class="blog-image-thumbnail"><a href="#"><img style="width: 100%" src="' + blog_image_link +'list.png" alt=""></a></div>';
-			
-			var blog_content = document.createElement('div');
-			blog_content.classList.add('col-8');
-			blog_day = blog_date.getDate() < 10 ? '0' + blog_date.getDate() : blog_date.getDate();
-			blog_month = blog_date.getMonth() < 10 ? '0' + blog_date.getMonth() : blog_date.getMonth();
-			blog_content.innerHTML = '<div class="blog-content"><div class="blog-tabs">' + blog_tags + '</div><a href="#" class="blog-list-title">' + blog_title + '</a><div class="blog-information"><div><i class="fa fa-calendar"></i><p>' + blog_day +'/' + blog_month + '/' + blog_date.getFullYear() +'</p></div><div><i class="fa fa-user"></i><p>' + blog_author +'</p></div></div><p>' + blog_summary + '</p></div>';
-			
-			blog_item.append(blog_image, blog_content);
-			
-			return blog_item;
-		}
-	</script>
+	<script src="JS/blog.js"></script>
 </body>
 </html>

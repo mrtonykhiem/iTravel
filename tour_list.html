@@ -1,0 +1,932 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Danh sách tour</title>
+	<link rel="icon" href="images/iTravel-icon.png">
+	<link rel="stylesheet" href="CSS/itravel-grid.css">
+	<link rel="stylesheet" href="CSS/bootstrap-grid.css">
+	<link rel="stylesheet" href="CSS/swiper-bundle.min.css">
+	<link rel="stylesheet" href="CSS/font-awesome.min.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+</head>
+
+<body>
+	<div class="container-fluid itravel-header">
+		<div class="container">
+			<div class="row itravel-header-content">
+				<div class="col-3">
+					<a href="index.html" style="display: block">
+						<img src="images/itravel_logo.png" alt="" style="display: block">
+					</a>
+				</div>
+				<div class="col-9">
+					<ul class="itravel-menu">
+						<li><a href="about_us.html">Về iTravel</a></li>
+						<li><a href="destination_list.html">Điểm đến</a></li>
+						<li><a href="tour_list.html">Tour</a></li>
+						<li><a href="blog_list.html">Blog</a></li>
+						<li><a href="contact.html">Liên hệ</a></li>
+						<li><button class="menu-button"><i class="fa fa-search"></i></button></li>
+						<li><button class="menu-button"><i class="fa fa-user"></i></button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid blue-itravel-subpage">
+		<div class="container subpage-url">
+			<a href="index.html">Home</a>
+			<i class="fa fa-chevron-right"></i>
+			<a href="#">Tour</a>
+		</div>
+	</div>
+	<div class="container-fluid news-background tour-background">
+		<h1>TOUR</h1>
+	</div>
+	
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-3">
+				<div class="tour-filter">
+					<div class="experience-item">
+							<input type="checkbox" id="experience-block-1" checked="true" class="experience-block-check">
+							<label for="experience-block-1">Điểm đến</label>
+							<div id="experience-content-1" class="accordion-text-content">
+								<ul>
+									<li><input type="checkbox" id="asia-check" name="destination-select" class="filter-sub-tab filter-continent-tab"><label for="asia-check">Cháu Á - Úc</label>
+										<div class="accordion-text-content" id="asia-sub-check">
+											<ul>
+												<li><input type="checkbox" id="northwest-asia-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="northwest-asia-check">Tây Bắc Á</label>
+													<div class="accordion-text-content" id="northwest-asia-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="turkey-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="turkey-check">Thỗ Nhĩ Kỳ</label></li>
+															<li><input type="checkbox" id="azerbaijan-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="azerbaijan-check">Azerbaijan</label></li>
+															<li><input type="checkbox" id="georgia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="georgia-check">Georgia</label></li>
+														</ul>
+													</div>
+												</li>
+												<li><input type="checkbox" id="central-asia-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="central-asia-check">Trung Á</label>
+													<div class="accordion-text-content" id="central-asia-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="kazakhstan-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="kazakhstan-check">Kazakhstan</label></li>
+															<li><input type="checkbox" id="uzbekistan-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="uzbekistan-check">Uzbekistan</label></li>
+															<li><input type="checkbox" id="iran-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="iran-check">Iran</label></li>
+														</ul>
+													</div>
+												</li>
+												<li><input type="checkbox" id="east-asia-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="east-asia-check">Đông Á</label>
+													<div class="accordion-text-content" id="east-asia-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="south-korea-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="south-korea-check">Hàn Quốc</label></li>
+															<li><input type="checkbox" id="japan-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="japan-check">Nhật Bản</label></li>
+															<li><input type="checkbox" id="china-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="china-check">Trung Hoa</label></li>
+															<li><input type="checkbox" id="taipei-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="taipei-check">Đài Loan</label></li>
+														</ul>
+													</div>
+												</li>
+												<li><input type="checkbox" id="southeast-asia-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="southeast-asia-check">Đông Nam Á</label>
+													<div class="accordion-text-content" id="southeast-asia-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="vietnam-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="vietnam-check">Việt Nam</label></li>
+															<li><input type="checkbox" id="thailand-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="thailand-check">Thái Lan</label></li>
+															<li><input type="checkbox" id="singapore-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="singapore-check">Singapore</label></li>
+															<li><input type="checkbox" id="indonesia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="indonesia-check">Indonesia</label></li>
+															<li><input type="checkbox" id="malaysia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="malaysia-check">Malaysia</label></li>
+															<li><input type="checkbox" id="cambodia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="cambodia-check">Campuchia</label></li>
+															<li><input type="checkbox" id="laos-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="laos-check">Lào</label></li>
+															<li><input type="checkbox" id="myanmar-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="myanmar-check">Myanmar</label></li>
+															<li><input type="checkbox" id="philippines-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="philippines-check">Philippines</label></li>
+														</ul>
+													</div>
+												</li>
+												<li><input type="checkbox" id="south-asia-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="south-asia-check">Nam Á</label>
+													<div class="accordion-text-content" id="south-asia-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="india-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="india-check">Ấn Độ</label></li>
+															<li><input type="checkbox" id="bangladesh-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="bangladesh-check">Bangladesh</label></li>
+															<li><input type="checkbox" id="bhutan-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="bhutan-check">Bhutan</label></li>
+															<li><input type="checkbox" id="maldives-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="maldives-check">Maldives</label></li>
+															<li><input type="checkbox" id="nepal-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="nepal-check">Nepal</label></li>
+															<li><input type="checkbox" id="pakistan-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="pakistan-check">Pakistan</label></li>
+															<li><input type="checkbox" id="srilanka-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="srilanka-check">Srilanka</label></li>
+														</ul>
+													</div>
+												</li>
+												<li><input type="checkbox" id="australasia-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="australasia-check">Châu Úc</label>
+													<div class="accordion-text-content" id="australasia-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="australia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="australia-check">Australia</label></li>
+															<li><input type="checkbox" id="new-zealands-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="new-zealands-check">New Zealands</label></li>
+														</ul>
+													</div>
+												</li>
+												
+											</ul>
+										</div>
+									</li>
+									<li><input type="checkbox" id="euro-check" name="destination-select" class="filter-sub-tab filter-continent-tab"><label for="euro-check">Châu Âu</label>
+										<div class="accordion-text-content" id="euro-sub-check">
+											<ul>
+												<li><input type="checkbox" id="western-europe-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="western-europe-check">Tây Âu</label>
+													<div class="accordion-text-content" id="western-europe-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="belgium-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="belgium-check">Bỉ</label></li>
+															<li><input type="checkbox" id="france-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="france-check">Pháp</label></li>
+															<li><input type="checkbox" id="ireland-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="ireland-check">Ireland</label></li>
+															<li><input type="checkbox" id="luxembourg-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="luxembourg-check">Luxembourg</label></li>
+															<li><input type="checkbox" id="netherlands-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="netherlands-check">Hà Lan</label></li>
+															<li><input type="checkbox" id="uk-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="uk-check">Anh Quốc</label></li>
+														</ul>
+													</div>
+												</li>
+												<li><input type="checkbox" id="central-europe-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="central-europe-check">Trung Âu</label>
+													<div class="accordion-text-content" id="central-europe-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="germany-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="germany-check">Đức</label></li>
+															<li><input type="checkbox" id="austria-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="austria-check">Áo</label></li>
+															<li><input type="checkbox" id="czech-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="czech-check">Séc</label></li>
+															<li><input type="checkbox" id="switzerland-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="switzerland-check">Thụy Sĩ</label></li>
+															<li><input type="checkbox" id="hungary-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="hungary-check">Hungary</label></li>
+															<li><input type="checkbox" id="slovakia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="slovakia-check">Slovakia</label></li>
+														</ul>
+													</div>
+												</li>
+												<li><input type="checkbox" id="northern-europe-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="northern-europe-check">Bắc Âu</label>
+													<div class="accordion-text-content" id="northern-europe-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="sweden-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="sweden-check">Thụy Điển</label></li>
+															<li><input type="checkbox" id="denmark-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="denmark-check">Đan Mạch</label></li>
+															<li><input type="checkbox" id="norway-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="norway-check">Na Uy</label></li>
+															<li><input type="checkbox" id="finland-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="finland-check">Phần Lan</label></li>
+															<li><input type="checkbox" id="iceland-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="iceland-check">Iceland</label></li>
+															<li><input type="checkbox" id="lithuania-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="lithuania-check">Lithuania</label></li>
+															<li><input type="checkbox" id="latvia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="latvia-check">Latvia</label></li>
+															<li><input type="checkbox" id="estonia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="estonia-check">Estonia</label></li>
+														</ul>
+													</div>
+												</li>
+												<li><input type="checkbox" id="eastern-europe-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="eastern-europe-check">Đông Âu</label>
+													<div class="accordion-text-content" id="eastern-europe-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="bulgaria-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="bulgaria-check">Bulgaria</label></li>
+															<li><input type="checkbox" id="belarus-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="belarus-check">Belarus</label></li>
+															<li><input type="checkbox" id="poland-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="poland-check">Ba Lan</label></li>
+															<li><input type="checkbox" id="romania-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="romania-check">Romania</label></li>
+															<li><input type="checkbox" id="russia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="russia-check">Nga</label></li>
+														</ul>
+													</div>
+												</li>
+												<li><input type="checkbox" id="southern-europe-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="southern-europe-check">Nam Âu</label>
+													<div class="accordion-text-content" id="southern-europe-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="spain-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="spain-check">Tây Ban Nha</label></li>
+															<li><input type="checkbox" id="portugal-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="portugal-check">Bồ Đào Nha</label></li>
+															<li><input type="checkbox" id="italy-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="italy-check">Italy</label></li>
+															<li><input type="checkbox" id="greece-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="greece-check">Hy Lạp</label></li>
+															<li><input type="checkbox" id="croatia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="croatia-check">Croatia</label></li>
+															<li><input type="checkbox" id="serbia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="serbia-check">Serbia</label></li>
+															<li><input type="checkbox" id="slovenia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="slovenia-check">Slovenia</label></li>
+															<li><input type="checkbox" id="cyprus-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="cyprus-check">Síp</label></li>
+															<li><input type="checkbox" id="malta-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="malta-check">Malta</label></li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><input type="checkbox" id="america-check" name="destination-select" class="filter-sub-tab filter-continent-tab"><label for="america-check">Châu Mỹ</label>
+										<div class="accordion-text-content" id="america-sub-check">
+											<ul>
+												<li><input type="checkbox" id="north-america-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="north-america-check">Bắc Mỹ</label>
+													<div class="accordion-text-content" id="north-america-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="usa-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="usa-check">Hoa Kỳ</label></li>
+															<li><input type="checkbox" id="canada-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="canada-check">Canada</label></li>
+															<li><input type="checkbox" id="mexico-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="mexico-check">Mexico</label></li>
+														</ul>
+													</div>
+												</li>
+												<li><input type="checkbox" id="central-america-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="central-america-check">Trung Mỹ</label>
+													<div class="accordion-text-content" id="central-america-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="cuba-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="cuba-check">Cuba</label></li>
+															<li><input type="checkbox" id="costa-rica-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="costa-rica-check">Costa Rica</label></li>
+															<li><input type="checkbox" id="panama-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="panama-check">Panama</label></li>
+														</ul>
+													</div>
+												</li>
+												<li><input type="checkbox" id="south-america-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="south-america-check">Nam Mỹ</label>
+													<div class="accordion-text-content" id="south-america-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="argentina-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="argentina-check">Argentina</label></li>
+															<li><input type="checkbox" id="bolivia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="bolivia-check">Bolivia</label></li>
+															<li><input type="checkbox" id="brazil-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="brazil-check">Brazil</label></li>
+															<li><input type="checkbox" id="chile-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="chile-check">Chile</label></li>
+															<li><input type="checkbox" id="colombia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="colombia-check">Colombia</label></li>
+															<li><input type="checkbox" id="ecuador-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="ecuador-check">Ecuador</label></li>
+															<li><input type="checkbox" id="peru-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="peru-check">Peru</label></li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li><input type="checkbox" id="africa-arab-check" name="destination-select" class="filter-sub-tab filter-continent-tab"><label for="africa-arab-check">Châu Phi - Ả Rập</label>
+										<div class="accordion-text-content" id="africa-arab-sub-check">
+											<ul>
+												<li><input type="checkbox" id="africa-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="africa-check">Châu Phi</label>
+													<div class="accordion-text-content" id="africa-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="egypt-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="egypt-check">Ai Cập</label></li>
+															<li><input type="checkbox" id="morocco-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="morocco-check">Ma Rốc</label></li>
+															<li><input type="checkbox" id="tunisia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="tunisia-check">Tunisia</label></li>
+															<li><input type="checkbox" id="south-africa-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="south-africa-check">Nam Phi</label></li>
+															<li><input type="checkbox" id="kenya-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="kenya-check">Kenya</label></li>
+															<li><input type="checkbox" id="ethiopia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="ethiopia-check">Ethiopia</label></li>
+														</ul>
+													</div>
+												</li>
+												<li><input type="checkbox" id="middle-east-check" name="sub-destination-select" class="filter-sub-tab filter-sub-tab-2"><label for="middle-east-check">Trung Đông</label>
+													<div class="accordion-text-content" id="middle-east-destination-check">
+														<ul class="country-list-check">
+															<li><input type="checkbox" id="uae-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="uae-check">UAE</label></li>
+															<li><input type="checkbox" id="saudi-arabia-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="saudi-arabia-check">Ả Rập Xê-út</label></li>
+															<li><input type="checkbox" id="bahrain-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="bahrain-check">Bahrain</label></li>
+															<li><input type="checkbox" id="qatar-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="qatar-check">Qatar</label></li>
+															<li><input type="checkbox" id="jordan-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="jordan-check">Jordan</label></li>
+															<li><input type="checkbox" id="israel-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="israel-check">Israel</label></li>
+															<li><input type="checkbox" id="oman-check" name="country-select" class="filter-check-content" onChange="filterTour()"><label for="oman-check">Oman</label></li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+					</div>
+					<div class="experience-item">
+							<input type="checkbox" id="experience-block-2" class="experience-block-check">
+							<label for="experience-block-2">Điểm xuất phát</label>
+							<div id="experience-content-2" class="accordion-text-content">
+								<ul id="depart-filter">
+									<li><input type="checkbox" id="ho-chi-minh-check" name="depart-select" class="filter-check-content" onClick="filterTour()"><label for="ho-chi-minh-check">TP.HCM</label></li>
+									<li><input type="checkbox" id="ha-noi-check" name="depart-select" class="filter-check-content" onClick="filterTour()"><label for="ha-noi-check">Hà Nội</label></li>
+									<li><input type="checkbox" id="da-nang-check" name="depart-select" class="filter-check-content" onClick="filterTour()"><label for="da-nang-check">Đà Nẵng</label></li>
+									<li><input type="checkbox" id="can-tho-check" name="depart-select" class="filter-check-content" onClick="filterTour()"><label for="can-tho-check">Cần Thơ</label></li>
+								</ul>
+							</div>
+					</div>
+					<div class="experience-item">
+							<input type="checkbox" id="experience-block-3" class="experience-block-check">
+							<label for="experience-block-3">Loại hình du lịch</label>
+							<div id="experience-content-3" class="accordion-text-content">
+								<ul id="type-tour-filter">
+									<li><input type="checkbox" id="culture-art-check" name="type-tour-select" class="filter-check-content" onChange="filterTour()"><label for="culture-art-check">Văn hoá</label></li>
+									<li><input type="checkbox" id="discover-check" name="type-tour-select" class="filter-check-content" onChange="filterTour()"><label for="discover-check">Khám phá</label></li>
+									<li><input type="checkbox" id="religion-check" name="type-tour-select" class="filter-check-content" onChange="filterTour()"><label for="religion-check">Hành hương</label></li>
+									<li><input type="checkbox" id="nature-check" name="type-tour-select" class="filter-check-content" onChange="filterTour()"><label for="nature-check">Sinh thái</label></li>
+									<li><input type="checkbox" id="resort-check" name="type-tour-select" class="filter-check-content" onChange="filterTour()"><label for="resort-check">Nghỉ dưỡng</label></li>
+									<li><input type="checkbox" id="sport-check" name="type-tour-select" class="filter-check-content" onChange="filterTour()"><label for="sport-check">Thể thao</label></li>
+								</ul>
+							</div>
+					</div>
+					<div class="experience-item">
+							<input type="checkbox" id="experience-block-4" class="experience-block-check">
+							<label for="experience-block-4">Số ngày</label>
+							<div id="experience-content-4" class="accordion-text-content">
+								<ul id="tour-length-filter">
+									<li><input type="checkbox" id="minus-4days-check" name="depart-select" class="filter-check-content" onChange="filterTour()"><label for="minus-4days-check">Dưới 4 ngày</label></li>
+									<li><input type="checkbox" id="4days-to-1week-check" name="depart-select" class="filter-check-content" onChange="filterTour()"><label for="4days-to-1week-check">4 ngày - 1 tuần</label></li>
+									<li><input type="checkbox" id="1week-to-2week-check" name="depart-select" class="filter-check-content" onChange="filterTour()"><label for="1week-to-2week-check">1 tuần - 2 tuần</label></li>
+									<li><input type="checkbox" id="2week-more-check" name="depart-select" class="filter-check-content" onChange="filterTour()"><label for="2week-more-check">2 tuần trở lên</label></li>
+								</ul>
+							</div>
+					</div>
+					<div class="experience-item">
+							<input type="checkbox" id="experience-block-5" class="experience-block-check">
+							<label for="experience-block-5">Ngày xuất phát</label>
+							<div id="experience-content-5" class="accordion-text-content" style="display: flex; justify-content: space-between">
+								<input type="date" id="date-from" name="date-from-book" onChange="filterTour()">
+								<div><span>-</span></div>
+								<input type="date" id="date-to" name="date-to-book" onChange="filterTour()">
+							</div>
+					</div>
+					<div class="experience-item">
+							<input type="checkbox" id="experience-block-6" class="experience-block-check">
+							<label for="experience-block-6">Giá cả</label>
+							<div id="experience-content-6" class="accordion-text-content">
+								<div class="double-range-wrapper">
+									<div class="values">
+										<span id="range1">
+											0 Đ
+										</span>
+										<span> &dash; </span>
+										<span id="range2">
+											200,000,000 Đ
+										</span>
+									</div>
+									<div class="double-range-container">
+										<div class="slider-track"></div>
+										<input type="range" min="0" max="200000000" value="0" step="1000000" id="slider-1" oninput="slideOne()" onChange="filterTour()">
+										<input type="range" min="0" max="200000000" value="200000000" step="1000000" id="slider-2" oninput="slideTwo()" onChange="filterTour()">
+									</div>
+								</div>
+							</div>
+					</div>
+					<div class="experience-item">
+							<input type="checkbox" id="experience-block-8" class="experience-block-check">
+							<label for="experience-block-8">Phương tiện</label>
+							<div id="experience-content-8" class="accordion-text-content">
+								<ul id="transport-filter">
+									<li><input type="checkbox" id="plane-check" name="transport-select" class="filter-check-content" onChange="filterTour()"><label for="plane-check">Máy bay</label></li>
+									<li><input type="checkbox" id="bus-check" name="transport-select" class="filter-check-content" onChange="filterTour()"><label for="bus-check">Xe khách</label></li>
+								</ul>
+							</div>
+					</div>
+					<div class="experience-item">
+							<input type="checkbox" id="experience-block-9" class="experience-block-check">
+							<label for="experience-block-9">Hiển thị</label>
+							<div id="experience-content-9" class="accordion-text-content">
+								<ul id="other-filter">
+									<li><input type="checkbox" id="sale-off-check" name="other-select" class="filter-check-content" onChange="filterTour()"><label for="sale-off-check">Khuyến mãi</label></li>
+									<li><input type="checkbox" id="available-seat-check" name="other-select" class="filter-check-content" onChange="filterTour()"><label for="available-seat-check">Còn chỗ</label></li>
+								</ul>
+							</div>
+					</div>
+					<div style="display: flex; justify-content: center; align-items: center; box-sizing: border-box; padding: 15px">
+						<button style="font-family: noto-sans-m; padding: 5px 10px; box-sizing: border-box; cursor: pointer; border-radius: 10px; background-color: #25aae1; color: #fff; border: none; outline: none; font-size: 18px" onClick="clearFilter()">Xoá Filter</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-9">
+				<div class="sort-list mb-4">
+					<span id="tour-list-length">24 kết quả</span>
+					<div class="sort-control" style="display: flex">
+						<span style="margin-right: 10px">Sắp xếp theo: </span>
+						<div class="tour-sort" style="position: relative">
+							<button class="sort-open" id="tour-sort-open">Yêu thích nhất</button>
+							<div class="tour-sort-popup" id="tour-sort-options">
+								<ul class="tour-sort-list-item">
+									<li><button class="tour-sort-button" id="tour-favorite">Yêu thích nhất</button></li>
+									<li><button class="tour-sort-button" id="tour-sales-asc">Giá từ thấp đến cao</button></li>
+									<li><button class="tour-sort-button" id="tour-sales-des">Giá từ cao đến thấp</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="tour-list">
+				</div>
+				<div class="destination-all" id="more-blog">
+					<p id="blog-show-num">12 trong 15 blog hiển thị</p>
+					<div class="mb-3" id="blog-show-bar">
+						<div id="blog-show-progress"></div>
+					</div>
+					<button class="see-more-button active" id="more-blog-button">XEM THÊM</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-fluid iTravel-footer mt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-5">
+					<div class="iTravel-footer-content row">
+						<div class="col-12">
+							<img src="images/itravel_logo.png" alt="">
+						</div>
+						<h5>NHẬN TIN</h5>
+						<div class="col-9 footer-subscribe">
+							<input type="text" placeholder="Enter your email">
+						</div>
+						<div class="col-3 footer-button">
+							<button class="footer-button-subscribe">ĐĂNG KÝ</button>
+						</div>
+						<h5>MẠNG XÃ HỘI</h5>
+						<ul class="iTravel-social-media">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						</ul>
+						<h5>LIÊN HỆ</h5>
+						<div class="contact-footer">
+							<div class="contact-info row">
+								<div class="col-1 contact-icon">
+									<i class="fa fa-phone"></i>
+								</div>
+								<div class="col-11 g-0">
+									<p>(028) 38351056</p>
+								</div>
+							</div>
+							<div class="contact-info row">
+								<div class="col-1 contact-icon">
+									<i class="fa fa-home"></i>
+								</div>
+								<div class="col-11 g-0">
+									<p>227 Nguyễn Văn Cừ, Quận 5, TP.HCM</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-7">
+					<div class="footer-menu row">
+						<div class="col-4 footer-list">
+							<h5>THÀNH PHỐ</h5>
+							<ul>
+								<li><a href="germany.html">Venice</a></li>
+								<li><a href="germany.html">Tokyo</a></li>
+								<li><a href="germany.html">Los Angeles</a></li>
+								<li><a href="germany.html">Bangkok</a></li>
+								<li><a href="germany.html">Rio de Janeiro</a></li>
+								<li><a href="germany.html">Casablanca</a></li>
+							</ul>
+						</div>
+						<div class="col-4 footer-list">
+							<h5>TOURS</h5>
+							<ul>
+								<li><a href="tour_list.html">Du lịch lịch sử, văn hoá</a></li>
+								<li><a href="tour_list.html">Du lịch sinh thái</a></li>
+								<li><a href="tour_list.html">Du lịch hành hương</a></li>
+								<li><a href="tour_list.html">Du lịch khám phá</a></li>
+								<li><a href="tour_list.html">Du lịch nghỉ dưỡng</a></li>
+								<li><a href="tour_list.html">Du lịch thế thao</a></li>
+							</ul>
+						</div>
+						<div class="col-4 footer-list">
+							<h5>QUỐC GIA</h5>
+							<ul>
+								<li><a href="germany.html">Pháp</a></li>
+								<li><a href="germany.html">Nhật Bản</a></li>
+								<li><a href="germany.html">Ai Cập</a></li>
+								<li><a href="germany.html">Hoa Kỳ</a></li>
+								<li><a href="germany.html">Đức</a></li>
+								<li><a href="germany.html">Úc</a></li>
+							</ul>
+						</div>
+						<div class="col-4 footer-list">
+							<h5>BLOG</h5>
+							<ul>
+								<li><a href="blog_list.html">Khám phá</a></li>
+								<li><a href="blog_list.html">Kinh nghiệm</a></li>
+								<li><a href="blog_list.html">Tin tức</a></li>
+								<li><a href="blog_list.html">Hành trình</a></li>
+							</ul>
+						</div>
+						<div class="col-4 footer-list">
+							<h5>LIÊN HỆ</h5>
+							<ul>
+								<li><a href="about_us.html">Về chúng tôi</a></li>
+								<li><a href="contact.html">Liên hệ</a></li>
+								<li><a href="about_us.html">Chính sách bảo mật</a></li>
+								<li><a href="about_us.html">Cơ hội việc làm</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="JS/mapbox-gl.js"></script>
+	<script src="JS/destination-city.js"></script>
+	<script src="JS/swiper-bundle.min.js"></script>
+	<script>
+		const tour_list_HTML = document.getElementById('tour-list');
+		const backUp_HTML = tour_list_HTML.innerHTML;
+		const blog_num_total = document.getElementById('blog-num-total');
+		const blog_show_progress = document.getElementById('blog-show-progress');
+		const blog_show_num = document.getElementById('blog-show-num');
+		const more_blog_button = document.getElementById('more-blog-button');
+		const tour_list_length = document.getElementById('tour-list-length');
+		const tour_sort_open = document.getElementById('tour-sort-open');
+		const tour_sort_options = document.getElementById('tour-sort-options');
+		const tour_favourite = document.getElementById('tour-favorite');
+		const tour_sale_asc = document.getElementById('tour-sales-asc');
+		const tour_sale_des = document.getElementById('tour-sales-des');
+		
+		var tour_list_current = tour_list;
+		var initial = 0;
+		var tour_show = 12;
+		
+		showTour();
+		
+		tour_sort_open.addEventListener('click', function() {
+			tour_sort_options.classList.toggle('active');
+		})
+		
+		tour_favourite.addEventListener('click', function() {
+			clearTourItem();
+			tour_sort_options.classList.remove('active');
+			tour_sort_open.textContent = tour_favourite.textContent;
+			tour_list_current = tour_list_current.sort(function(tour_a, tour_b) {
+				return tour_b.tour_interest - tour_a.tour_interest;
+			});
+			showTour();
+		})
+		
+		tour_sale_asc.addEventListener('click', function() {
+			clearTourItem();
+			tour_sort_options.classList.remove('active');
+			tour_sort_open.textContent = tour_sale_asc.textContent;
+			tour_list_current = tour_list_current.sort(function(tour_a, tour_b) {
+				return tour_b.tour_sale - tour_a.tour_sale;
+			});
+			showTour();
+		})
+		
+		tour_sale_des.addEventListener('click', function() {
+			clearTourItem();
+			tour_sort_options.classList.remove('active');
+			tour_sort_open.textContent = tour_sale_des.textContent;
+			tour_list_current = tour_list_current.sort(function(tour_a, tour_b) {
+				return tour_a.tour_sale - tour_b.tour_sale;
+			});
+			showTour();
+		})
+		
+		function showTour() {
+			if (tour_list_current.length > tour_show) {
+				for (var i=initial; i<tour_show; i++) {
+					if (tour_list_current[i].tour_sale_off != 0) {
+						tour_list_HTML.innerHTML = tour_list_HTML.innerHTML + '<div class="col-4" style="margin-bottom: 30px"><div class="tour-content"><div class="tour-image"><a href="tour_1.html" class="tour-thumbnail"><img src="' + tour_list_current[i].tour_image + 'thumbnail.png" alt="" style="width: 100%"></a><div class="tour-score">'+ parseFloat(tour_list_current[i].tour_score).toFixed(1) +'</div><div class="tour-interest">'+ tour_list_current[i].tour_interest +' quan tâm</div><div class="tour-sale-off-label"><h5>'+ tour_list_current[i].tour_sale_off * 100 +'%</h5><p>SALE OFF</p></div></div><div class="tour-info"><h6>' + tour_list_current[i].tour_summary + '</h6><a href="tour_1.html">' + tour_list[i].tour_name +'</a></div><div class="tour-break-line"></div><div class="tour-time-depart"><div class="tour-detail"><i class="fa fa-calendar"></i><p><span>Thời gian: </span>' + tour_list_current[i].tour_time +'</p></div><div class="tour-detail"><i class="fa fa-flag"></i><p><span>Xuất phát: </span>'+ tour_list_current[i].tour_depart + '</p></div></div><div class="tour-break-line"></div><div class="tour-review-price"><a href="tour_1.html">Xem chi tiết</a><h4><span>từ </span>' + new Intl.NumberFormat().format(tour_list_current[i].tour_sale) +' đ</h4></div></div></div>';
+					} else {
+						tour_list_HTML.innerHTML = tour_list_HTML.innerHTML + '<div class="col-4" style="margin-bottom: 30px"><div class="tour-content"><div class="tour-image"><a href="tour_1.html" class="tour-thumbnail"><img src="' + tour_list_current[i].tour_image + 'thumbnail.png" alt="" style="width: 100%"></a><div class="tour-score">'+ parseFloat(tour_list_current[i].tour_score).toFixed(1) +'</div><div class="tour-interest">'+ tour_list_current[i].tour_interest +' quan tâm</div></div><div class="tour-info"><h6>' + tour_list_current[i].tour_summary + '</h6><a href="tour_1.html">' + tour_list[i].tour_name +'</a></div><div class="tour-break-line"></div><div class="tour-time-depart"><div class="tour-detail"><i class="fa fa-calendar"></i><p><span>Thời gian: </span>' + tour_list_current[i].tour_time +'</p></div><div class="tour-detail"><i class="fa fa-flag"></i><p><span>Xuất phát: </span>'+ tour_list_current[i].tour_depart + '</p></div></div><div class="tour-break-line"></div><div class="tour-review-price"><a href="tour_1.html">Xem chi tiết</a><h4><span>từ </span>' + new Intl.NumberFormat().format(tour_list_current[i].tour_sale) +' đ</h4></div></div></div>';
+					}
+				}
+				more_blog_button.classList.add('active');
+				blog_show_num.textContent = tour_show + ' trong ' + tour_list_current.length + ' hiển thị';
+				blog_progress_percent = tour_show/tour_list_current.length * 100;
+				blog_show_progress.style.width = blog_progress_percent + '%';
+				initial = tour_show;
+				tour_show = tour_show + 12;
+			} else {
+				for (var i=initial; i<tour_list_current.length; i++) {
+					if (tour_list_current[i].tour_sale_off != 0) {
+						tour_list_HTML.innerHTML = tour_list_HTML.innerHTML + '<div class="col-4" style="margin-bottom: 30px"><div class="tour-content"><div class="tour-image"><a href="tour_1.html" class="tour-thumbnail"><img src="' + tour_list_current[i].tour_image + 'thumbnail.png" alt="" style="width: 100%"></a><div class="tour-score">'+ parseFloat(tour_list_current[i].tour_score).toFixed(1) +'</div><div class="tour-interest">'+ tour_list_current[i].tour_interest +' quan tâm</div><div class="tour-sale-off-label"><h5>'+ tour_list_current[i].tour_sale_off * 100 +'%</h5><p>SALE OFF</p></div></div><div class="tour-info"><h6>' + tour_list_current[i].tour_summary + '</h6><a href="tour_1.html">' + tour_list[i].tour_name +'</a></div><div class="tour-break-line"></div><div class="tour-time-depart"><div class="tour-detail"><i class="fa fa-calendar"></i><p><span>Thời gian: </span>' + tour_list_current[i].tour_time +'</p></div><div class="tour-detail"><i class="fa fa-flag"></i><p><span>Xuất phát: </span>'+ tour_list_current[i].tour_depart + '</p></div></div><div class="tour-break-line"></div><div class="tour-review-price"><a href="tour_1.html">Xem chi tiết</a><h4><span>từ </span>' + new Intl.NumberFormat().format(tour_list_current[i].tour_sale) +' đ</h4></div></div></div>';
+					} else {
+						tour_list_HTML.innerHTML = tour_list_HTML.innerHTML + '<div class="col-4" style="margin-bottom: 30px"><div class="tour-content"><div class="tour-image"><a href="tour_1.html" class="tour-thumbnail"><img src="' + tour_list_current[i].tour_image + 'thumbnail.png" alt="" style="width: 100%"></a><div class="tour-score">'+ parseFloat(tour_list_current[i].tour_score).toFixed(1) +'</div><div class="tour-interest">'+ tour_list_current[i].tour_interest +' quan tâm</div></div><div class="tour-info"><h6>' + tour_list_current[i].tour_summary + '</h6><a href="tour_1.html">' + tour_list[i].tour_name +'</a></div><div class="tour-break-line"></div><div class="tour-time-depart"><div class="tour-detail"><i class="fa fa-calendar"></i><p><span>Thời gian: </span>' + tour_list_current[i].tour_time +'</p></div><div class="tour-detail"><i class="fa fa-flag"></i><p><span>Xuất phát: </span>'+ tour_list_current[i].tour_depart + '</p></div></div><div class="tour-break-line"></div><div class="tour-review-price"><a href="tour_1.html">Xem chi tiết</a><h4><span>từ </span>' + new Intl.NumberFormat().format(tour_list_current[i].tour_sale) +' đ</h4></div></div></div>';
+					}	
+				}
+				more_blog_button.classList.remove('active');
+				blog_show_num.textContent = tour_list_current.length + ' trong ' + tour_list_current.length + ' hiển thị';
+				blog_show_progress.style.width = '100%';
+			}
+			tour_list_length.textContent = tour_list_current.length + ' kết quả';
+		}
+		
+		more_blog_button.addEventListener('click', function() {
+			showTour();
+		})
+		
+		function clearTourItem() {
+			tour_list_HTML.innerHTML = '';
+			tour_show = 12;
+			initial = 0;
+			tour_sort_open.textContent = tour_favourite.textContent;
+		}
+		
+		window.onload = function(){
+    slideOne();
+    slideTwo();
+}
+
+let sliderOne = document.getElementById("slider-1");
+let sliderTwo = document.getElementById("slider-2");
+let displayValOne = document.getElementById("range1");
+let displayValTwo = document.getElementById("range2");
+let minGap = 0;
+let sliderTrack = document.querySelector(".slider-track");
+let sliderMaxValue = document.getElementById("slider-1").max;
+		
+		fillColor();
+
+function slideOne(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+        sliderOne.value = parseInt(sliderTwo.value) - minGap;
+    }
+    displayValOne.textContent = Intl.NumberFormat().format(sliderOne.value) + ' Đ';
+    fillColor();
+}
+function slideTwo(){
+    if(parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap){
+        sliderTwo.value = parseInt(sliderOne.value) + minGap;
+    }
+    displayValTwo.textContent = Intl.NumberFormat().format(sliderTwo.value) + ' Đ';
+    fillColor();
+}
+function fillColor(){
+    percent1 = (sliderOne.value / sliderMaxValue) * 100;
+    percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+    sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #25aae1 ${percent1}% , #3264fe ${percent2}%, #dadae5 ${percent2}%)`;
+}
+		
+const less_4days_check = document.getElementById('minus-4days-check');
+const four_days_to_week = document.getElementById('4days-to-1week-check');
+const week_to_2week = document.getElementById('1week-to-2week-check');
+const greater_2week_check = document.getElementById('2week-more-check');
+		
+const hcm_check = document.getElementById('ho-chi-minh-check');
+const ha_noi_check = document.getElementById('ha-noi-check');
+const da_nang_check = document.getElementById('da-nang-check');
+const can_tho_check = document.getElementById('can-tho-check');
+
+const culture_art_check = document.getElementById('culture-art-check');
+const discover_check = document.getElementById('discover-check');
+const religion_check = document.getElementById('religion-check');
+const nature_check = document.getElementById('nature-check');
+const resort_check = document.getElementById('resort-check');
+const sport_check = document.getElementById('sport-check');
+		
+const date_begin = document.getElementById('date-from');
+const date_end = document.getElementById('date-to');
+
+const bus_check = document.getElementById('bus-check');
+const plane_check = document.getElementById('plane-check');
+		
+const sale_off_check = document.getElementById('sale-off-check');
+const available_book_check = document.getElementById('available-seat-check');
+		
+const country_list_check = document.querySelectorAll('.country-list-check li input');
+const country_list_label = document.querySelectorAll('.country-list-check li label');
+const filter_sub_tab = document.querySelectorAll('.filter-sub-tab');
+		
+const all_filter_tab = document.querySelectorAll('.filter-check-content');
+
+function clearFilter() {
+	clearTourItem();
+	all_filter_tab.forEach(function(filter_tab) {
+		filter_tab.checked = false;
+	});
+	
+	filter_sub_tab.forEach(function(filter_tab) {
+		filter_tab.checked = false;
+	});
+	
+	sliderOne.value = sliderOne.min;
+	sliderTwo.value = sliderTwo.max;
+	slideOne();
+	slideTwo();
+	
+	date_begin.value = '';
+	date_end.value = '';
+	tour_list_current = tour_list;
+	showTour();
+}
+		
+function findCommonElements3(arr1, arr2) {
+	return arr1.some(item => arr2.includes(item))
+}
+		
+function findCountryCheck() {
+	var filter_word = [];
+	for (var i=0; i<country_list_check.length; i++) {
+		if (country_list_check[i].checked) {
+			filter_word.push(country_list_label[i].textContent);
+		}
+	}
+	return filter_word;
+}
+		
+function tourDepartDateFilter(depart_date) {
+
+	//const date_begin_format = new Date(date_begin.value);
+	const date_begin_format = new Date(date_begin.value);
+	
+	//const date_end_format = new Date(date_end.value);
+	const date_end_format = new Date(date_end.value);
+	
+	if (depart_date >= date_begin_format && depart_date <= date_end_format) {
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function isAvailableSeat(tour_item) {
+	var sum = 0;
+	for (var i=0; i<tour_item.length; i++) {
+		sum = sum + tour_item[i].available_book;
+	}
+	return sum > 0;
+}
+		
+//console.log(tour_list_current[4].tour_book.some(book_sale => parseFloat(book_sale.sale_off) > 0));
+		
+function filterTour() {
+	clearTourItem();
+	var filter_exp = '';
+	var filter_list_condition = [];
+	
+	// Filter by countries
+	var country_list_array = [];
+	var filter_country_exp = '';
+	country_list_array = findCountryCheck();
+	if (country_list_array.length != 0) {
+		filter_country_exp = '(findCommonElements3(tour_item.tour_country, country_list_array))';
+		filter_list_condition.push(filter_country_exp);
+	}
+	
+	// Filter by tour length
+	const less_4days_exp = '(tour_item.tour_length < 4)';
+	const four_days_to_week_exp = '(tour_item.tour_length >= 4 && tour_item.tour_length < 7)';
+	const week_to_2week_exp = '(tour_item.tour_length >= 7 && tour_item.tour_length < 14)';
+	const greater_2week_exp = '(tour_item.tour_length >= 14)';
+	
+	var tour_length_array = [];
+	var tour_length_exp = '';
+	
+	if (less_4days_check.checked) {
+		tour_length_array.push(less_4days_exp);
+	}
+	
+	if (four_days_to_week.checked) {
+		tour_length_array.push(four_days_to_week_exp);
+	}
+	
+	if (week_to_2week.checked) {
+		tour_length_array.push(week_to_2week_exp);
+	}
+	
+	if (greater_2week_check.checked) {
+		tour_length_array.push(greater_2week_exp);
+	}
+	
+	if (tour_length_array.length != 0) {
+		for (var i=0; i<tour_length_array.length; i++) {
+			tour_length_exp = tour_length_exp + tour_length_array[i];
+			if (i < tour_length_array.length - 1) {
+				tour_length_exp = tour_length_exp + ' || ';
+			}
+		}
+		tour_length_exp = '('+ tour_length_exp +')';
+		filter_list_condition.push(tour_length_exp);
+	}
+	
+	// Filter by tour depart
+	const hcm_exp = '(tour_item.tour_depart == "TP.HCM")';
+	const ha_noi_exp = '(tour_item.tour_depart == "Hà Nội")';
+	const da_nang_exp = '(tour_item.tour_depart == "Đà Nẵng")';
+	const can_tho_exp = '(tour_item.tour_depart == "Cần Thơ")';
+	
+	var tour_depart_array = [];
+	var tour_depart_exp = '';
+	
+	if (hcm_check.checked) {
+		tour_depart_array.push(hcm_exp);
+	}
+	
+	if (ha_noi_check.checked) {
+		tour_depart_array.push(ha_noi_exp);
+	}
+	
+	if (da_nang_check.checked) {
+		tour_depart_array.push(da_nang_exp);
+	}
+	
+	if (can_tho_check.checked) {
+		tour_depart_array.push(can_tho_exp);
+	}
+	
+	if (tour_depart_array.length != 0) {
+		for (var i=0; i<tour_depart_array.length; i++) {
+			tour_depart_exp = tour_depart_exp + tour_depart_array[i];
+			if (i < tour_depart_array.length - 1) {
+				tour_depart_exp = tour_depart_exp + ' || ';
+			}
+		}
+		tour_depart_exp = '('+ tour_depart_exp +')';
+		filter_list_condition.push(tour_depart_exp);
+	}
+	
+	// Filter by tour type
+	const culture_art_exp = '(tour_item.tour_type.includes("VĂN HOÁ") == true)';
+	const discover_exp = '(tour_item.tour_type.includes("KHÁM PHÁ") == true)';
+	const religion_exp = '(tour_item.tour_type.includes("HÀNH HƯƠNG") == true)';
+	const nature_exp = '(tour_item.tour_type.includes("SINH THÁI") == true)';
+	const resort_exp = '(tour_item.tour_type.includes("NGHỈ DƯỠNG") == true)';
+	const sport_exp = '(tour_item.tour_type.includes("THỂ THAO") == true)';
+	
+	var tour_type_array = [];
+	var tour_type_exp = '';
+
+	
+	if (culture_art_check.checked) {
+		tour_type_array.push(culture_art_exp);
+	}
+	
+	if (discover_check.checked) {
+		tour_type_array.push(discover_exp);
+	}
+	
+	if (religion_check.checked) {
+		tour_type_array.push(religion_exp);
+	}
+	
+	if (nature_check.checked) {
+		tour_type_array.push(nature_exp);
+	}
+	
+	if (resort_check.checked) {
+		tour_type_array.push(resort_exp);
+	}
+	
+	if (sport_check.checked) {
+		tour_type_array.push(sport_exp);
+	}
+	
+	if (tour_type_array.length != 0) {
+		for (var i=0; i<tour_type_array.length; i++) {
+			tour_type_exp = tour_type_exp + tour_type_array[i];
+			if (i < tour_type_array.length - 1) {
+				tour_type_exp = tour_type_exp + ' || ';
+			}
+		}
+		tour_type_exp = '('+ tour_type_exp +')';
+		filter_list_condition.push(tour_type_exp);
+	}
+	
+	// Filter by departed days
+	var tour_depart_days_exp = '';
+	
+	if (date_begin.value != '' && date_end.value != '') {
+		tour_depart_days_exp = '(tour_item.tour_book.some(book => tourDepartDateFilter(book.depart_date)))';
+		filter_list_condition.push(tour_depart_days_exp);
+	}
+	
+	// Filter by tour sale
+	var tour_sale_exp = '';
+	
+	if (sliderOne.value != sliderOne.min && sliderTwo.value != sliderTwo.max) {
+		tour_sale_exp = '(tour_item.tour_sale <= sliderTwo.value && tour_item.tour_sale >= sliderOne.value)';
+		filter_list_condition.push(tour_sale_exp);
+	}
+	
+	// Filter by tour transport
+	const plane_exp = '(tour_item.tour_transport.includes("Máy bay") == true)';
+	const bus_exp = '(tour_item.tour_transport.includes("Xe khách") == true)';
+	
+	var tour_transport_exp = '';
+	var tour_transport_array = [];
+	
+	if (plane_check.checked) {
+		tour_transport_array.push(plane_exp);
+	}
+	
+	if (bus_check.checked) {
+		tour_transport_array.push(bus_exp);
+	}
+	
+	if (tour_transport_array.length != 0) {
+		for (var i=0; i<tour_transport_array.length; i++) {
+			tour_transport_exp = tour_transport_exp + tour_transport_array[i];
+			if (i < tour_transport_array.length - 1) {
+				tour_transport_exp = tour_transport_exp + ' || ';
+			}
+		}
+		tour_transport_exp = '('+ tour_transport_exp +')';
+		filter_list_condition.push(tour_transport_exp);
+	}
+	
+	// Sale off Filters isAvailableSeat
+	var sale_off_exp = '';
+	sale_off_exp = '(tour_item.tour_sale_off > 0)';
+	
+	if (sale_off_check.checked) {
+		filter_list_condition.push(sale_off_exp);
+	}
+	
+	var available_book_exp = '';
+	available_book_exp = 'isAvailableSeat(tour_item.tour_book)';
+	
+	if (available_book_check.checked) {
+		filter_list_condition.push(available_book_exp);
+	}
+	
+	// Combine all Filters
+	
+	if (filter_list_condition.length != 0) {
+		for (var i=0; i<filter_list_condition.length; i++) {
+			filter_exp = filter_exp + filter_list_condition[i];
+			if (i < filter_list_condition.length - 1) {
+				filter_exp = filter_exp + ' && ';
+			}
+		}
+		filter_exp = '(' + filter_exp + ')';
+		tour_list_current = tour_list.filter(tour_item => eval(filter_exp));
+	} else {
+		tour_list_current = tour_list;
+	}
+	
+	showTour();
+	
+	//console.log(tour_list_current);
+}
+	</script>
+</body>
+</html>

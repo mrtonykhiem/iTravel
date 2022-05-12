@@ -8,6 +8,8 @@
       50.820810615638294],
       zoom: 5.00
     });
+
+map.scrollZoom.disable();
 		
 		let hoveredStateId = null;
 		const top_destination_img = document.getElementById('top-destination-img-preview');
@@ -27,7 +29,7 @@ map.addLayer({
 'source': 'places',
 'paint': {
 'circle-color': ['case',['boolean', ['feature-state', 'hover'], false],'#25AAE1', '#FBB040'],
-'circle-radius': ['case',['boolean', ['feature-state', 'hover'], false],10, 8],
+'circle-radius': ['case',['boolean', ['feature-state', 'hover'], false],15, 12],
 'circle-stroke-width': 2,
 'circle-stroke-color': '#ffffff'
 }
